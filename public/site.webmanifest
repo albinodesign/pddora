@@ -1,0 +1,11 @@
+{
+  "name": "Ambulanter Pflegedienst Dora GmbH",
+  "short_name": "Dora GmbH",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#47153b",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}
