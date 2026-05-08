@@ -25,34 +25,34 @@ Die gesamte Anwendung läuft ausschließlich über **Next.js App Router** mit st
 
 ```
 ├── app/                          # Next.js App Router (alle aktiven Seiten)
-│   ├── datenschutz/              # Datenschutzerklärung
-│   ├── impressum/                # Impressum (enthält Platzhalter)
-│   ├── kontakt/                  # Kontaktseite mit Formular
-│   ├── leistungen/               # Leistungsübersicht
+│   ├── datenschutz/              # Datenschutzerklärung (Muster-Text)
+│   ├── impressum/                # Impressum (enthält Platzhalter für HRB/USt-ID)
+│   ├── kontakt/                  # Kontaktseite mit Web3Forms-Formular
+│   ├── leistungen/               # Leistungsübersicht mit ServiceCards
 │   ├── ueber-uns/                # Über-uns-Seite
 │   ├── globals.css               # Tailwind-Direktiven & Custom Styles
-│   ├── layout.tsx                # Root-Layout mit Metadaten, Fonts, Header, Footer
+│   ├── layout.tsx                # Root-Layout mit Metadaten, Fonts, Header, Footer, CookieBanner
 │   ├── not-found.tsx             # 404-Fehlerseite
-│   └── page.tsx                  # Startseite
+│   └── page.tsx                  # Startseite mit Hero, Leistungsvorschau, USPs, CTA, JSON-LD
 ├── components/                   # Geteilte React-Komponenten
-│   ├── ContactBar.tsx            # Fixe Kontaktleiste (unten mobil, oben desktop)
-│   ├── CookieBanner.tsx          # DSGVO-Cookie-Consent-Banner
-│   ├── Footer.tsx                # Seitenfuß
-│   ├── Header.tsx                # Navigation mit Mobile-Menü
-│   ├── PageIntro.tsx             # Einheitliche Seitenüberschrift
-│   └── ServiceCard.tsx           # Leistungskarte
+│   ├── CookieBanner.tsx          # DSGVO-Cookie-Consent-Banner (Client-Komponente)
+│   ├── Footer.tsx                # Seitenfuß mit Kontakt, Rechtliches
+│   ├── Header.tsx                # Sticky Navigation mit Mobile-Menü (Client-Komponente)
+│   ├── PageIntro.tsx             # Einheitliche Seitenüberschrift (Server-Komponente)
+│   └── ServiceCard.tsx           # Leistungskarte (Server-Komponente)
 ├── public/                       # Statische Assets
-│   ├── *.webp                    # Optimierte Bilder
+│   ├── *.webp                    # Optimierte Bilder (hero, 1-4, uberuns, warumwir)
 │   ├── logo.jpeg                 # Firmenlogo
 │   ├── robots.txt                # SEO-Robots
 │   ├── sitemap.xml               # SEO-Sitemap
 │   └── site.webmanifest          # PWA-Manifest
 ├── constants.tsx                 # Brand-Konfiguration, Kontaktdaten, SVG-Icons, Navigation
-├── types.ts                      # TypeScript-Typdefinitionen
+├── types.ts                      # TypeScript-Typdefinitionen (ServiceCardProps, ServiceCardDetails)
 ├── tailwind.config.js            # Tailwind-Konfiguration mit Brand-Farben & Fonts
 ├── postcss.config.cjs            # PostCSS-Konfiguration (Tailwind + Autoprefixer)
 ├── next.config.mjs               # Next.js Static-Export-Konfiguration
 ├── netlify.toml                  # Netlify Build & Security-Headers
+├── metadata.json                 # Projektdescription für Agenten-Tools
 └── out/                          # Next.js Static-Export-Output (eingecheckt)
 ```
 
@@ -72,7 +72,7 @@ npm run start
 npm run lint
 ```
 
-**Wichtig:** Der Build erzeugt mit `output: 'export'` in `next.config.mjs` statische HTML-Dateien im Ordner `out/`. Dieser Ordner ist im Repository eingecheckt und wird direkt auf Netlify veröffentlicht (`publish = "out"` in `netlify.toml`).
+**Wichtig:** Der Build erzeugt mit `output: 'export'` in `next.config.mjs` statische HTML-Dateien im Ordner `out/`. Dieser Ordner ist im Repository eingecheckt und wird direkt auf Netlify veröffentlicht (`publish = "out"` in `netlify.toml`). Nach jeder Code-Änderung muss `npm run build` ausgeführt und der `out/`-Ordner committet werden, damit die Änderungen live gehen.
 
 ## Code-Style-Richtlinien
 
@@ -84,7 +84,7 @@ npm run lint
 ### Namenskonventionen
 - Komponenten: PascalCase (z. B. `Header.tsx`, `ServiceCard.tsx`)
 - Seiten: `page.tsx` (Next.js-Konvention)
-- Konstanten-Exports: UPPER_SNAKE_CASE (z. B. `BRAND`, `CONTACT`, `ICONS`)
+- Konstanten-Exports: UPPER_SNAKE_CASE (z. B. `BRAND`, `CONTACT`, `ICONS`, `NAVIGATION`)
 - Verzeichnisse: kebab-case (z. B. `ueber-uns/`, `leistungen/`)
 
 ### Styling
@@ -115,7 +115,7 @@ Das Kontaktformular in `app/kontakt/page.tsx` sendet **direkt client-seitig** an
 - Honeypot: `botcheck` (verstecktes Checkbox-Feld)
 - DSGVO-Checkbox ist Pflichtfeld
 - Bei Erfolg: Weiterleitung zu `https://pd-dora.de/kontakt?success=true`
-- Der Access-Key ist im HTML hardcodiert
+- Der Access-Key ist im HTML hardcodiert (`7ac58a77-a441-4f08-a8cc-3f735b6159ca`)
 
 Es existiert keine API-Route mehr für Formularversand. Frühere serverseitige Validierungsrouten wurden entfernt.
 
@@ -216,7 +216,8 @@ Das Projekt enthält **keine automatisierten Tests**. Manuelle Test-Checkliste:
 - Alle nutzerseitigen Inhalte sind auf Deutsch
 - Rechtliche Seiten (Impressum, Datenschutz) folgen deutschen Rechtsanforderungen
 - HTML-Attribut: `lang="de"`
-- **Hinweis:** Das Impressum (`app/impressum/page.tsx`) enthält noch Platzhalter wie `[Vorname Nachname des Geschäftsführers]`, `[HRB Nummer]`, `[USt-ID Nummer]`.
+- **Hinweis:** Das Impressum (`app/impressum/page.tsx`) enthält noch Platzhalter für Registergericht, HRB-Nummer und USt-ID. Der Geschäftsführer ist bereits eingetragen: Said Hamdaoui.
+- **Hinweis:** Die Datenschutzerklärung (`app/datenschutz/page.tsx`) ist ein Mustertext und sollte rechtsgültig von einem Fachanwalt geprüft werden.
 
 ## Cache Busting
 
@@ -229,9 +230,9 @@ Bei Bildänderungen muss das Datum in allen betroffenen Dateien aktualisiert wer
 ## SEO & Metadaten
 
 - Jede Seite exportiert ein `metadata`-Objekt mit `title`, `description`, OpenGraph und Twitter-Cards
-- `layout.tsx` enthält globale Metadaten, Viewport-Einstellungen, Icons und Webmanifest
+- `layout.tsx` enthält globale Metadaten, Viewport-Einstellungen (`themeColor: '#47153b'`), Icons und Webmanifest
 - `robots.txt`, `sitemap.xml` und `site.webmanifest` liegen in `public/`
-- Structured Data (JSON-LD) für LocalBusiness ist in der Startseite eingebettet
+- Structured Data (JSON-LD) für LocalBusiness ist in der Startseite (`app/page.tsx`) eingebettet
 
 ## Häufige Aufgaben
 
@@ -253,6 +254,12 @@ SVG-Komponente in `constants.tsx` unter `ICONS` ergänzen.
 - Tailwind-Konfiguration: `tailwind.config.js`
 - Komponenten-spezifisch: Tailwind Utility-Klassen direkt im JSX
 
+### Build nach Änderungen
+```bash
+npm run build
+```
+Anschließend den `out/`-Ordner committen, damit die Änderungen auf Netlify live gehen.
+
 ---
 
-*Letzte Aktualisierung: 2026-04-29*
+*Letzte Aktualisierung: 2026-05-08*

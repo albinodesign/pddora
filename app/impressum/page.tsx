@@ -31,14 +31,14 @@ export default function ImpressumPage() {
         <h2 className="text-xl font-bold mt-8 mb-4">Registereintrag</h2>
         <p>
           Eintragung im Handelsregister.<br />
-          Registergericht: [Amtsgericht Stadt]<br />
-          Registernummer: [HRB Nummer]
+          Registergericht: Offenbach am Main<br />
+          Registernummer: HRB 58556
         </p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Umsatzsteuer-ID</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4">Steuernummer</h2>
         <p>
-          Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-          [USt-ID Nummer]
+          Steuernummer:<br />
+          044 241 20148
         </p>
 
         <h2 className="text-xl font-bold mt-8 mb-4">Redaktionell verantwortlich</h2>
