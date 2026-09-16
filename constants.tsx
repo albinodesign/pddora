@@ -1,30 +1,10 @@
 
 import React from 'react';
+import siteData from '@/content/site.json';
 
-export const BRAND = {
-  name: "Ambulanter Pflegedienst Dora GmbH",
-  tagline: "Pflege mit Herz, Kompetenz und Vertrauen",
-  primaryColor: "#47153b",
-  quote: "„Menschlichkeit steht bei uns im Mittelpunkt. Wir begegnen jedem Menschen mit Respekt, Wärme und echter Zuwendung – denn gute Pflege bedeutet nicht nur Versorgung, sondern Vertrauen.“"
-};
-
-export const CONTACT = {
-  phone: "069 – 800 894 44",
-  mobile: "0160 – 8089444",
-  fax: "069 – 800 894 45",
-  email: "info@pd-dora.de",
-  address: "Kaiserleistraße 43, 63067 Offenbach am Main",
-  openingHours: "Mo. - Fr.: 09:00 - 16:00 Uhr",
-  city: "Offenbach",
-  serviceArea: "Alle Stadtteile in Offenbach und Frankfurt am Main. Auf Anfrage bedienen wir auch andere Gebiete."
-};
-
-export const NAVIGATION = [
-  { name: 'Startseite', path: '/' },
-  { name: 'Leistungen', path: '/leistungen' },
-  { name: 'Über Uns', path: '/ueber-uns' },
-  { name: 'Kontakt', path: '/kontakt' }
-];
+export const BRAND = siteData.brand;
+export const CONTACT = siteData.contact;
+export const NAVIGATION = siteData.navigation;
 
 export const ICONS = {
   Phone: (props: React.SVGProps<SVGSVGElement>) => (

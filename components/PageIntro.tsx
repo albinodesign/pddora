@@ -5,11 +5,12 @@ interface PageIntroProps {
   title: string;
   description: string;
   accent?: string;
+  cmsPrefix?: string;
 }
 
-const PageIntro: React.FC<PageIntroProps> = ({ title, description, accent }) => {
+const PageIntro: React.FC<PageIntroProps> = ({ title, description, accent, cmsPrefix }) => {
   return (
-    <section className="relative pt-32 pb-20 bg-brand overflow-hidden">
+    <section className="relative pt-32 pb-20 bg-brand overflow-hidden" data-cms-section={cmsPrefix}>
       <div className="absolute inset-0 z-0 opacity-10" aria-hidden="true">
         <div className="absolute top-0 left-0 w-96 h-96 bg-brand-accent rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-accent rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
@@ -17,15 +18,15 @@ const PageIntro: React.FC<PageIntroProps> = ({ title, description, accent }) => 
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         {accent && (
-          <span className="inline-block text-brand-accent text-xs font-black uppercase tracking-[0.3em] mb-4">
+          <span className="inline-block text-brand-accent text-xs font-black uppercase tracking-[0.3em] mb-4" data-cms-field={cmsPrefix ? `${cmsPrefix}.accent` : undefined}>
             {accent}
           </span>
         )}
-        <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight" data-cms-field={cmsPrefix ? `${cmsPrefix}.title` : undefined}>
           {title}
         </h1>
         <div className="w-24 h-1.5 bg-brand-accent mx-auto mb-8 rounded-full"></div>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-brand-accent/80 font-light leading-relaxed">
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-brand-accent/80 font-light leading-relaxed" data-cms-field={cmsPrefix ? `${cmsPrefix}.description` : undefined}>
           {description}
         </p>
       </div>

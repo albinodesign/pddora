@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Ambulanter Pflegedienst Dora GmbH | Pflege mit Herz in Frankfurt & Offenbach"
+  },
+  "hero": {
+    "badge": "Ambulanter Pflegedienst – Dora GmbH",
+    "titleLine1": "Pflege mit Herz,",
+    "titleAccent": "Kompetenz & Vertrauen.",
+    "subtitle": "Wir begleiten Sie und Ihre Liebsten würdevoll im Alltag – für ein selbstbestimmtes Leben im eigenen Zuhause.",
+    "ctaPrimary": "Kostenlose Beratung",
+    "ctaSecondary": "Unsere Leistungen",
+    "image": {
+      "src": "/hero.webp?v=20260129",
+      "alt": "Warm hands holding"
+    }
+  },
+  "philosophy": {
+    "label": "Unser Versprechen an Sie",
+    "image": {
+      "src": "/1.webp?v=20260129",
+      "alt": "Caring interaction"
+    }
+  },
+  "services": {
+    "eyebrow": "Was wir bieten",
+    "title": "Wie wir Ihnen helfen",
+    "linkLabel": "Mehr erfahren",
+    "items": [
+      {
+        "title": "Grundpflege",
+        "desc": "Würdevolle Unterstützung bei Körperpflege, Ernährung und Mobilität im vertrauten Zuhause.",
+        "img": "/2.webp?v=20260129"
+      },
+      {
+        "title": "Behandlungspflege",
+        "desc": "Fachgerechte medizinische Versorgung nach ärztlicher Verordnung durch unsere Profis.",
+        "img": "/3.webp?v=20260129"
+      },
+      {
+        "title": "Hauswirtschaft",
+        "desc": "Wir halten Ihnen den Rücken frei und unterstützen Sie zuverlässig bei alltäglichen Aufgaben.",
+        "img": "/4.webp?v=20260129"
+      }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Warum wir?",
+    "title": "Menschlichkeit ist unsere höchste Priorität.",
+    "features": [
+      {
+        "title": "Bezugspflege",
+        "desc": "Wir setzen auf feste Ansprechpartner für echtes Vertrauen."
+      },
+      {
+        "title": "24h Erreichbarkeit",
+        "desc": "Im Notfall sind wir rund um die Uhr als verlässlicher Partner an Ihrer Seite."
+      },
+      {
+        "title": "Individuelle Beratung",
+        "desc": "Wir nehmen uns Zeit für Ihre Situation und planen maßgeschneidert."
+      },
+      {
+        "title": "Höchste Qualität",
+        "desc": "Regelmäßige Schulungen sichern erstklassige medizinische Standards."
+      }
+    ],
+    "cta": "Mehr über unser Team erfahren",
+    "image": {
+      "src": "/warumwir.webp?v=20260129",
+      "alt": "Happy senior"
+    },
+    "badgeValue": "100%",
+    "badgeLabel": "Engagement"
+  },
+  "cta": {
+    "titleLine1": "Wir sind für Sie da.",
+    "titleLine2": "Rund um die Uhr.",
+    "text": "Ein persönliches Gespräch ist der erste Schritt zu einer verlässlichen Pflege. Rufen Sie uns unverbindlich an – wir beraten Sie gerne direkt bei Ihnen zu Hause."
+  }
+}

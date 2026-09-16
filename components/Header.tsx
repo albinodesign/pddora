@@ -4,33 +4,37 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NAVIGATION, CONTACT, ICONS } from '@/constants';
+import siteData from '@/content/site.json';
+
+const header = siteData.header;
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand/10 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand/10 shadow-sm" data-cms-section="global.header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center gap-3 group" aria-label="Dora GmbH Startseite">
+          <Link href="/" className="flex items-center gap-3 group" aria-label={header.logoAriaLabel}>
             <img
-              src="/logo.jpeg?v=20260129"
-              alt="Dora GmbH Logo"
+              src={header.logoSrc}
+              alt={header.logoAlt}
               className="h-12 w-12 object-contain rounded-full bg-white p-1 shadow-sm border border-brand/10"
+              data-cms-field="header.logo"
             />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-brand tracking-tight font-serif group-hover:text-brand-light transition-colors">
-                Ambulanter Pflegedienst
+              <span className="text-xl font-bold text-brand tracking-tight font-serif group-hover:text-brand-light transition-colors" data-cms-field="header.brandLine1">
+                {header.brandLine1}
               </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-medium -mt-1">
-                Dora GmbH
+              <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-medium -mt-1" data-cms-field="header.brandLine2">
+                {header.brandLine2}
               </span>
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8" aria-label="Hauptnavigation">
-            {NAVIGATION.map((item) => (
+          <nav className="hidden md:flex items-center space-x-8" aria-label={header.navAriaLabel}>
+            {NAVIGATION.map((item, idx) => (
               <Link
                 key={item.name}
                 href={item.path}
@@ -38,6 +42,7 @@ const Header: React.FC = () => {
                   pathname === item.path ? 'text-brand border-b-2 border-brand pb-1' : 'text-gray-600'
                 }`}
                 aria-current={pathname === item.path ? 'page' : undefined}
+                data-cms-field={`navigation.${idx}.name`}
               >
                 {item.name}
               </Link>
@@ -57,7 +62,7 @@ const Header: React.FC = () => {
               className="inline-flex items-center justify-center p-3 rounded-md text-brand hover:bg-brand/5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand"
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
-              aria-label={isOpen ? "Menü schließen" : "Menü öffnen"}
+              aria-label={isOpen ? header.menuCloseLabel : header.menuOpenLabel}
             >
               {!isOpen ? (
                 <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -94,7 +99,7 @@ const Header: React.FC = () => {
               className="flex items-center justify-center gap-3 bg-brand text-white w-full py-3 rounded-lg text-lg font-bold shadow-lg"
             >
               <ICONS.Phone className="w-5 h-5" />
-              Jetzt anrufen
+              <span data-cms-field="header.mobileCallCta">{header.mobileCallCta}</span>
             </a>
           </div>
         </div>

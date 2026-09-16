@@ -13,4 +13,5 @@ export interface ServiceCardProps {
   icon?: React.ReactNode;
   features?: string[];
   details?: ServiceCardDetails;
+  cmsPrefix?: string;
 }

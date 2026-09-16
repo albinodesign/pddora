@@ -1,51 +1,55 @@
 import React from 'react';
 import { BRAND, CONTACT } from '@/constants';
+import impressumData from '@/content/pages/impressum.json';
+import type { ImpressumContent } from '@/content/types';
 import type { Metadata } from 'next';
 
+const impressum: ImpressumContent = impressumData;
+
 export const metadata: Metadata = {
-  title: 'Impressum | Ambulanter Pflegedienst Dora GmbH',
-  description: 'Impressum des Ambulanten Pflegedienstes Dora GmbH in Offenbach/Frankfurt am Main.',
+  title: impressum.meta.title,
+  description: impressum.meta.description,
 };
 
 export default function ImpressumPage() {
   return (
     <div className="bg-white min-h-screen pb-24">
-      <div className="max-w-4xl mx-auto px-4 py-20">
-        <h1 className="text-3xl font-serif font-bold text-brand mb-8">Impressum</h1>
+      <div className="max-w-4xl mx-auto px-4 py-20" data-cms-section="impressum">
+        <h1 className="text-3xl font-serif font-bold text-brand mb-8" data-cms-field="impressum.title">{impressum.title}</h1>
         
-        <h2 className="text-xl font-bold mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4" data-cms-field="impressum.tmg.heading">{impressum.tmg.heading}</h2>
         <p>
           {BRAND.name}<br />
           {CONTACT.address}
         </p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Vertreten durch</h2>
-        <p>Said Hamdaoui</p>
+        <h2 className="text-xl font-bold mt-8 mb-4" data-cms-field="impressum.representedBy.heading">{impressum.representedBy.heading}</h2>
+        <p data-cms-field="impressum.representedBy.name">{impressum.representedBy.name}</p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Kontakt</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4" data-cms-field="impressum.contact.heading">{impressum.contact.heading}</h2>
         <p>
-          Telefon: {CONTACT.phone}<br />
-          E-Mail: {CONTACT.email}
+          {impressum.contact.phoneLabel} {CONTACT.phone}<br />
+          {impressum.contact.emailLabel} {CONTACT.email}
         </p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Registereintrag</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4" data-cms-field="impressum.register.heading">{impressum.register.heading}</h2>
         <p>
-          Eintragung im Handelsregister.<br />
-          Registergericht: Offenbach am Main<br />
-          Registernummer: HRB 58556
+          {impressum.register.line1}<br />
+          {impressum.register.courtLabel} <span data-cms-field="impressum.register.court">{impressum.register.court}</span><br />
+          {impressum.register.numberLabel} <span data-cms-field="impressum.register.number">{impressum.register.number}</span>
         </p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Steuernummer</h2>
+        <h2 className="text-xl font-bold mt-8 mb-4" data-cms-field="impressum.tax.heading">{impressum.tax.heading}</h2>
         <p>
-          Steuernummer:<br />
-          044 241 20148
+          {impressum.tax.label}<br />
+          <span data-cms-field="impressum.tax.number">{impressum.tax.number}</span>
         </p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Redaktionell verantwortlich</h2>
-        <p>Said Hamdaoui</p>
+        <h2 className="text-xl font-bold mt-8 mb-4" data-cms-field="impressum.editorial.heading">{impressum.editorial.heading}</h2>
+        <p data-cms-field="impressum.editorial.name">{impressum.editorial.name}</p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
-        <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        <h2 className="text-xl font-bold mt-8 mb-4" data-cms-field="impressum.dispute.heading">{impressum.dispute.heading}</h2>
+        <p data-cms-field="impressum.dispute.text">{impressum.dispute.text}</p>
       </div>
     </div>
   );

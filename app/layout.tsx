@@ -5,6 +5,9 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import siteData from '@/content/site.json';
+
+const siteMeta = siteData.metadata;
 
 
 const inter = Inter({
@@ -27,21 +30,21 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Ambulanter Pflegedienst Dora GmbH | Pflege mit Herz in Offenbach/Frankfurt am Main',
-  description: 'Ihr ambulanter Pflegedienst für kompetente und herzliche Pflege in den eigenen vier Wänden. Dora GmbH – Vertrauen und Menschlichkeit in Offenbach/Frankfurt am Main.',
+  title: siteMeta.title,
+  description: siteMeta.description,
   metadataBase: new URL('https://pd-dora.de'),
   openGraph: {
-    title: 'Ambulanter Pflegedienst Dora GmbH | Pflege mit Herz',
-    description: 'Ihr ambulanter Pflegedienst für kompetente und herzliche Pflege in den eigenen vier Wänden.',
-    url: 'https://pd-dora.de',
+    title: siteMeta.ogTitle,
+    description: siteMeta.ogDescription,
+    url: siteMeta.ogUrl,
     siteName: 'Ambulanter Pflegedienst Dora GmbH',
     locale: 'de_DE',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ambulanter Pflegedienst Dora GmbH',
-    description: 'Pflege mit Herz, Kompetenz und Vertrauen in Offenbach/Frankfurt am Main.',
+    title: siteMeta.twitterTitle,
+    description: siteMeta.twitterDescription,
   },
   icons: {
     icon: '/favicon.ico',
@@ -65,6 +68,11 @@ export default function RootLayout({
         </main>
         <Footer />
         <CookieBanner />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){window.addEventListener('message',function(e){var d=e.data;if(!d||d.type!=='CMS_FIELD_UPDATE')return;var el=document.querySelector('[data-cms-field="'+CSS.escape(d.fieldId)+'"]');if(!el)return;if(el.tagName==='IMG'){el.setAttribute('src',d.value);}else{el.textContent=d.value;}});})();`,
+          }}
+        />
       </body>
     </html>
   )

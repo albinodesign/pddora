@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "title": "Impressum | Ambulanter Pflegedienst Dora GmbH",
+    "description": "Impressum des Ambulanten Pflegedienstes Dora GmbH in Offenbach/Frankfurt am Main."
+  },
+  "title": "Impressum",
+  "tmg": {
+    "heading": "Angaben gemäß § 5 TMG"
+  },
+  "representedBy": {
+    "heading": "Vertreten durch",
+    "name": "Said Hamdaoui"
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "phoneLabel": "Telefon:",
+    "emailLabel": "E-Mail:"
+  },
+  "register": {
+    "heading": "Registereintrag",
+    "line1": "Eintragung im Handelsregister.",
+    "courtLabel": "Registergericht:",
+    "court": "Offenbach am Main",
+    "numberLabel": "Registernummer:",
+    "number": "HRB 58556"
+  },
+  "tax": {
+    "heading": "Steuernummer",
+    "label": "Steuernummer:",
+    "number": "044 241 20148"
+  },
+  "editorial": {
+    "heading": "Redaktionell verantwortlich",
+    "name": "Said Hamdaoui"
+  },
+  "dispute": {
+    "heading": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+    "text": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+  }
+}

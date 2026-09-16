@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "name": "Ambulanter Pflegedienst Dora GmbH",
+    "tagline": "Pflege mit Herz, Kompetenz und Vertrauen",
+    "primaryColor": "#47153b",
+    "quote": "„Menschlichkeit steht bei uns im Mittelpunkt. Wir begegnen jedem Menschen mit Respekt, Wärme und echter Zuwendung – denn gute Pflege bedeutet nicht nur Versorgung, sondern Vertrauen.“"
+  },
+  "contact": {
+    "phone": "069 – 800 894 44",
+    "mobile": "0160 – 8089444",
+    "fax": "069 – 800 894 45",
+    "email": "info@pd-dora.de",
+    "address": "Kaiserleistraße 43, 63067 Offenbach am Main",
+    "openingHours": "Mo. - Fr.: 09:00 - 16:00 Uhr",
+    "city": "Offenbach",
+    "serviceArea": "Alle Stadtteile in Offenbach und Frankfurt am Main. Auf Anfrage bedienen wir auch andere Gebiete."
+  },
+  "navigation": [
+    { "name": "Startseite", "path": "/" },
+    { "name": "Leistungen", "path": "/leistungen" },
+    { "name": "Über Uns", "path": "/ueber-uns" },
+    { "name": "Kontakt", "path": "/kontakt" }
+  ],
+  "header": {
+    "logoSrc": "/logo.jpeg?v=20260129",
+    "logoAlt": "Dora GmbH Logo",
+    "logoAriaLabel": "Dora GmbH Startseite",
+    "brandLine1": "Ambulanter Pflegedienst",
+    "brandLine2": "Dora GmbH",
+    "navAriaLabel": "Hauptnavigation",
+    "menuOpenLabel": "Menü öffnen",
+    "menuCloseLabel": "Menü schließen",
+    "mobileCallCta": "Jetzt anrufen"
+  },
+  "footer": {
+    "tagline": "„Pflege mit Herz, Kompetenz und Vertrauen.\"",
+    "description": "Ihr kompetenter Partner für häusliche Pflege. Wir bieten individuelle Unterstützung für ein würdevolles Leben in den eigenen vier Wänden.",
+    "contactHeading": "Kontakt",
+    "serviceAreaLabel": "Einzugsgebiet:",
+    "faxLabel": "Fax:",
+    "legalHeading": "Rechtliches",
+    "impressumLabel": "Impressum",
+    "datenschutzLabel": "Datenschutzerklärung",
+    "kontaktLabel": "Kontakt",
+    "copyrightSuffix": "Alle Rechte vorbehalten."
+  },
+  "cookieBanner": {
+    "title": "Ihre Privatsphäre ist uns wichtig",
+    "textPreLink": "Wir verwenden Cookies, um die einwandfreie Funktion unserer Website zu gewährleisten und unser Angebot zu verbessern. Durch Klicken auf „Alle akzeptieren\" stimmen Sie der Verwendung von Cookies zu. Weitere Informationen finden Sie in unserer ",
+    "privacyLinkLabel": "Datenschutzerklärung",
+    "textPostLink": ".",
+    "acceptLabel": "Alle akzeptieren",
+    "declineLabel": "Nur notwendige"
+  },
+  "metadata": {
+    "title": "Ambulanter Pflegedienst Dora GmbH | Pflege mit Herz in Offenbach/Frankfurt am Main",
+    "description": "Ihr ambulanter Pflegedienst für kompetente und herzliche Pflege in den eigenen vier Wänden. Dora GmbH – Vertrauen und Menschlichkeit in Offenbach/Frankfurt am Main.",
+    "ogTitle": "Ambulanter Pflegedienst Dora GmbH | Pflege mit Herz",
+    "ogDescription": "Ihr ambulanter Pflegedienst für kompetente und herzliche Pflege in den eigenen vier Wänden.",
+    "ogUrl": "https://pd-dora.de",
+    "twitterTitle": "Ambulanter Pflegedienst Dora GmbH",
+    "twitterDescription": "Pflege mit Herz, Kompetenz und Vertrauen in Offenbach/Frankfurt am Main."
+  },
+  "jsonLd": {
+    "name": "Ambulanter Pflegedienst Dora GmbH",
+    "description": "Ihr ambulanter Pflegedienst für kompetente und herzliche Pflege in den eigenen vier Wänden.",
+    "url": "https://pd-dora.de",
+    "telephone": "+496980089444",
+    "streetAddress": "Kaiserleistraße 43",
+    "addressLocality": "Offenbach am Main",
+    "postalCode": "63067",
+    "addressCountry": "DE",
+    "areaServed": "Offenbach und Frankfurt am Main",
+    "priceRange": "€€"
+  }
+}

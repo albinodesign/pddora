@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Datenschutzerklärung | Ambulanter Pflegedienst Dora GmbH",
+    "description": "Datenschutzerklärung des Ambulanten Pflegedienstes Dora GmbH in Offenbach/Frankfurt am Main."
+  },
+  "title": "Datenschutzerklärung",
+  "overview": {
+    "heading": "1. Datenschutz auf einen Blick",
+    "generalHeading": "Allgemeine Hinweise",
+    "generalText": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.",
+    "collectionHeading": "Datenerfassung auf dieser Website",
+    "collectionText": "Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber (siehe Impressum)."
+  },
+  "hosting": {
+    "heading": "2. Hostinganbieter",
+    "text": "Wir hosten unsere Website bei Netlify. Bei jedem Aufruf dieser Website werden automatisierte Informationen von Ihrem Browser an Netlify übermittelt (Server-Logfiles). Dies sind bspw. IP-Adresse, Datum/Uhrzeit, Browser-Typ."
+  },
+  "web3forms": {
+    "heading": "3. Web3Forms",
+    "text": "Für unser Kontaktformular nutzen wir den Dienst Web3Forms. Die von Ihnen in das Formular eingegebenen Daten werden an die Server von Web3Forms weitergeleitet, damit wir Ihre Anfrage bearbeiten können. Weitere Informationen finden Sie in der Datenschutzerklärung von Web3Forms."
+  },
+  "rights": {
+    "heading": "4. Ihre Rechte",
+    "text": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen."
+  },
+  "note": "Hinweis: Dies ist ein Muster-Text. Für eine rechtsgültige Webseite sollten diese Texte von einem Fachanwalt geprüft werden."
+}

@@ -19,12 +19,13 @@ Die gesamte Anwendung läuft ausschließlich über **Next.js App Router** mit st
 | Sprache | TypeScript | ~5.8.2 | strict mode aktiviert |
 | Build | next build | – | Static HTML Export nach `/out` |
 | Deployment | Netlify | – | Veröffentlicht `/out` |
-| Formular-Backend | Web3Forms | API-basiert | Direkter Client-seitiger POST |
+| Formular-Backend | Web3Forms | API-basiert | Direkter Client-seitiger POST (HTML-Form `action`) |
 
 ## Projektstruktur
 
 ```
 ├── app/                          # Next.js App Router (alle aktiven Seiten)
+│   ├── api/submit/               # Leeres Verzeichnis (frühere API-Route entfernt, kein Code mehr)
 │   ├── datenschutz/              # Datenschutzerklärung (Muster-Text)
 │   ├── impressum/                # Impressum (enthält Platzhalter für HRB/USt-ID)
 │   ├── kontakt/                  # Kontaktseite mit Web3Forms-Formular
@@ -46,13 +47,19 @@ Die gesamte Anwendung läuft ausschließlich über **Next.js App Router** mit st
 │   ├── robots.txt                # SEO-Robots
 │   ├── sitemap.xml               # SEO-Sitemap
 │   └── site.webmanifest          # PWA-Manifest
-├── constants.tsx                 # Brand-Konfiguration, Kontaktdaten, SVG-Icons, Navigation
+├── constants.tsx                 # Re-Exporte aus content/site.json (BRAND, CONTACT, NAVIGATION) + SVG-Icons (ICONS)
+├── content/                      # CMS-entkoppelte Inhalte – ALLE Texte & Bild-Referenzen liegen hier
+│   ├── site.json                 # Globale Daten: brand, contact, navigation, header, footer, cookieBanner, metadata, jsonLd
+│   ├── types.ts                  # TypeScript-Interfaces für alle Content-JSONs
+│   ├── cms.manifest.json         # CMS-Manifest: jedes editierbare Feld (id, label, type, file, path, maxLength)
+│   └── pages/                    # Seiteninhalte: home.json, kontakt.json, leistungen.json, ueber-uns.json, impressum.json, datenschutz.json, not-found.json
 ├── types.ts                      # TypeScript-Typdefinitionen (ServiceCardProps, ServiceCardDetails)
-├── tailwind.config.js            # Tailwind-Konfiguration mit Brand-Farben & Fonts
+├── tailwind.config.js            # Tailwind-Konfiguration mit Brand-Farben & Fonts (ESM-Export)
 ├── postcss.config.cjs            # PostCSS-Konfiguration (Tailwind + Autoprefixer)
 ├── next.config.mjs               # Next.js Static-Export-Konfiguration
 ├── netlify.toml                  # Netlify Build & Security-Headers
-├── metadata.json                 # Projektdescription für Agenten-Tools
+├── metadata.json                 # Projektbeschreibung für Agenten-Tools
+├── .env.local.example            # Beispiel-Env-Datei (aktuell nicht verwendet, Key ist hardcodiert)
 └── out/                          # Next.js Static-Export-Output (eingecheckt)
 ```
 
@@ -95,7 +102,7 @@ npm run lint
   - `brand.dark`: #2e0d26
   - `brand.accent`: #fdf7fa
 - Custom CSS in `app/globals.css` für Scrollbar, Skip-Link, Animationen, Fokus-Ringe
-- Google Fonts (Inter, Playfair Display) werden über `next/font/google` in `layout.tsx` geladen
+- Google Fonts (Inter, Playfair Display) werden über `next/font/google` in `layout.tsx` geladen und über CSS-Variablen (`--font-inter`, `--font-playfair`) in Tailwind eingebunden
 - Import-Alias: `@/` löst zum Projektroot auf
 
 ### Barrierefreiheit (Pflicht)
@@ -109,15 +116,15 @@ npm run lint
 
 ## Formular-Handling
 
-Das Kontaktformular in `app/kontakt/page.tsx` sendet **direkt client-seitig** an `https://api.web3forms.com/submit`:
-- Methode: POST
+Das Kontaktformular in `app/kontakt/page.tsx` sendet **direkt client-seitig** als klassisches HTML-Formular an `https://api.web3forms.com/submit`:
+- Methode: POST (via `<form action="https://api.web3forms.com/submit" method="POST">`)
 - Felder: `name`, `email`, `phone` (optional), `message`
 - Honeypot: `botcheck` (verstecktes Checkbox-Feld)
 - DSGVO-Checkbox ist Pflichtfeld
 - Bei Erfolg: Weiterleitung zu `https://pd-dora.de/kontakt?success=true`
 - Der Access-Key ist im HTML hardcodiert (`7ac58a77-a441-4f08-a8cc-3f735b6159ca`)
 
-Es existiert keine API-Route mehr für Formularversand. Frühere serverseitige Validierungsrouten wurden entfernt.
+Es existiert keine aktive API-Route mehr für Formularversand (das Verzeichnis `app/api/submit/` ist leer; frühere serverseitige Validierungsrouten wurden entfernt). Die Datei `.env.local.example` mit `WEB3FORMS_ACCESS_KEY` ist ein Überbleibsel und wird vom aktuellen Code nicht eingelesen.
 
 ## Deployment
 
@@ -125,13 +132,12 @@ Es existiert keine API-Route mehr für Formularversand. Frühere serverseitige V
 - Build-Befehl: `npm run build`
 - Publish-Verzeichnis: `out`
 - Security-Headers gesetzt:
-  - `X-Frame-Options: DENY`
   - `X-XSS-Protection: 1; mode=block`
   - `X-Content-Type-Options: nosniff`
   - `Referrer-Policy: strict-origin-when-cross-origin`
   - `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`
   - `Permissions-Policy: camera=(), microphone=(), geolocation=()`
-  - `Content-Security-Policy` (umfangreich konfiguriert)
+  - `Content-Security-Policy` (umfangreich konfiguriert, erlaubt u. a. `api.web3forms.com` als connect-src und Google Fonts; enthält `frame-ancestors 'self' http://localhost:* https://*.vercel.app` für CMS-Preview-Einbettung — `X-Frame-Options` wurde zugunsten von `frame-ancestors` entfernt; `img-src` erlaubt zusätzlich `https://*.supabase.co`)
 
 ### Static Export
 - `next.config.mjs`: `output: 'export'`, `images: { unoptimized: true }`, `reactStrictMode: true`
@@ -144,12 +150,16 @@ Es existiert keine API-Route mehr für Formularversand. Frühere serverseitige V
 ```javascript
 {
   output: 'export',
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+    remotePatterns: [{ protocol: 'https', hostname: '**.supabase.co' }],
+  },
   reactStrictMode: true
 }
 ```
 
 ### `tailwind.config.js`
+- ESM-Export (`export default`), da `package.json` `"type": "module"` setzt
 - Content-Pfade: `app/`, `components/`, Root-Dateien
 - Custom Font-Families: Inter (sans), Playfair Display (serif) über CSS-Variablen
 - Brand-Farbpalette erweitert
@@ -165,7 +175,7 @@ Es existiert keine API-Route mehr für Formularversand. Frühere serverseitige V
 
 ## Marken-Konstanten
 
-Aus `constants.tsx`:
+Aus `content/site.json` (in `constants.tsx` als `BRAND`, `CONTACT`, `NAVIGATION` re-exportiert):
 
 ```typescript
 BRAND.name: "Ambulanter Pflegedienst Dora GmbH"
@@ -241,10 +251,10 @@ Bei Bildänderungen muss das Datum in allen betroffenen Dateien aktualisiert wer
 2. `page.tsx` mit Komponenten-Export hinzufügen
 3. `metadata`-Export für SEO-Titel definieren
 4. `PageIntro`-Komponente für einheitliche Überschriften verwenden
-5. Bei Bedarf Link in `constants.tsx` → `NAVIGATION` ergänzen
+5. Bei Bedarf Link in `content/site.json` → `navigation` ergänzen (wird in `constants.tsx` als `NAVIGATION` re-exportiert)
 
 ### Kontaktdaten aktualisieren
-`constants.tsx` bearbeiten – Änderungen propagieren automatisch in alle Komponenten.
+`content/site.json` bearbeiten (Abschnitt `contact`) – `constants.tsx` re-exportiert die Werte, Änderungen propagieren automatisch in alle Komponenten.
 
 ### Neue Icons hinzufügen
 SVG-Komponente in `constants.tsx` unter `ICONS` ergänzen.
@@ -260,6 +270,22 @@ npm run build
 ```
 Anschließend den `out/`-Ordner committen, damit die Änderungen auf Netlify live gehen.
 
+## Content-Management (CMS-Entkopplung)
+
+Seit der CMS-Refaktorierung kommen **alle sichtbaren Texte und Bild-Referenzen aus JSON-Dateien** unter `content/` — im JSX steht kein statischer deutscher Text mehr (Ausnahmen: rein technische Strings wie aria-hidden, className, Formular-Feldnamen).
+
+- `content/site.json` — globale Unternehmensdaten: `brand`, `contact`, `navigation`, `header`, `footer`, `cookieBanner`, `metadata` (globale SEO-Werte aus `layout.tsx`), `jsonLd` (Structured Data der Startseite)
+- `content/pages/*.json` — Seiteninhalte: `home`, `kontakt`, `leistungen`, `ueber-uns`, `impressum`, `datenschutz`, `not-found` (inkl. `meta`-Objekten für die `metadata`-Exports)
+- `content/types.ts` — TypeScript-Interfaces für alle Content-JSONs; die JSON-Imports in den Komponenten sind damit annotiert (z. B. `const home: HomeContent = homeData`)
+- `content/cms.manifest.json` — CMS-Manifest mit **271 editierbaren Feldern** in 14 Sektionen (u. a. "Startseite - Hero", "Startseite - Leistungen (Karte 1..3)", "Kontaktseite", "Header/Footer", "Cookie-Banner", "Globale Unternehmensdaten"). Jedes Feld hat `id`, `label`, `type` (text/textarea/image), `file`, `path` (JSON-Pfad) und `maxLength`. Enthält `features: { "blog": false }` (die Website hat keinen Blog).
+
+### DOM-Marker & Preview-Bridge
+- Sektionen tragen `data-cms-section="..."` (z. B. `home.hero`), editierbare Text-/Bild-Tags `data-cms-field="..."` (Feld-`id` aus dem Manifest; Listen mit Index, z. B. `home.services.0.title`)
+- `app/layout.tsx` enthält eine Inline-Preview-Bridge (`dangerouslySetInnerHTML`): ein `message`-Listener verarbeitet `postMessage`-Events vom Typ `CMS_FIELD_UPDATE` mit `{ fieldId, value }` und aktualisiert das Element mit passendem `data-cms-field` (bei `<img>` das `src`-Attribut, sonst `textContent`). Harmlos in Produktion.
+
+### Texte ändern
+Texte/Bilder in der passenden JSON-Datei unter `content/` ändern, danach `npm run build` ausführen und `out/` committen. Bei neuen Feldern das Manifest (`content/cms.manifest.json`) und ggf. `content/types.ts` mitpflegen.
+
 ---
 
-*Letzte Aktualisierung: 2026-05-08*
+*Letzte Aktualisierung: 2026-09-16*

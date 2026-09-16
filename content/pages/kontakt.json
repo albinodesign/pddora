@@ -1,0 +1,34 @@
+{
+  "intro": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind für Sie da. Melden Sie sich gerne telefonisch oder per Nachricht."
+  },
+  "details": {
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "addressLabel": "Anschrift",
+    "officeHoursHeading": "Bürozeiten",
+    "serviceAreaHeading": "Einzugsgebiet",
+    "note": "Hinweis: In dringenden pflegerischen Notfällen sind wir für unsere Patienten rund um die Uhr erreichbar."
+  },
+  "form": {
+    "heading": "Schreiben Sie uns",
+    "nameLabel": "Ihr Name",
+    "namePlaceholder": "Max Mustermann",
+    "emailLabel": "E-Mail Adresse",
+    "emailPlaceholder": "email@beispiel.de",
+    "phoneLabel": "Telefonnummer (optional)",
+    "phonePlaceholder": "+49 123 456789",
+    "messageLabel": "Ihre Nachricht",
+    "messagePlaceholder": "Wie können wir Ihnen helfen?",
+    "dsgvoPreLink": "Ich willige ein, dass meine Angaben zur Kontaktaufnahme gespeichert werden. Weitere Informationen finden Sie in der ",
+    "dsgvoLinkLabel": "Datenschutzerklärung",
+    "dsgvoPostLink": ".",
+    "submitLabel": "Nachricht absenden"
+  },
+  "success": {
+    "title": "Vielen Dank!",
+    "text": "Ihre Nachricht wurde erfolgreich versendet. Wir melden uns zeitnah bei Ihnen.",
+    "backLabel": "Neues Formular senden"
+  }
+}
