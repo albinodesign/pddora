@@ -5,8 +5,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NAVIGATION, CONTACT, ICONS } from '@/constants';
 import siteData from '@/src/content/site.json';
+import { normalizeContent } from '@/src/content/normalize';
+import type { SiteContent } from '@/src/content/types';
 
-const header = siteData.header;
+const header = normalizeContent<SiteContent>(siteData).header;
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

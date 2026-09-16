@@ -4,9 +4,10 @@ import { BRAND, CONTACT, ICONS } from '@/constants';
 import siteData from '@/src/content/site.json';
 import homeData from '@/src/content/pages/home.json';
 import type { HomeContent } from '@/src/content/types';
+import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const home: HomeContent = homeData;
+const home = normalizeContent<HomeContent>(homeData);
 
 export const metadata: Metadata = {
   title: home.meta.title,

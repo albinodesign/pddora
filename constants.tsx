@@ -1,10 +1,14 @@
 
 import React from 'react';
 import siteData from '@/src/content/site.json';
+import { normalizeContent } from '@/src/content/normalize';
+import type { SiteContent } from '@/src/content/types';
 
-export const BRAND = siteData.brand;
-export const CONTACT = siteData.contact;
-export const NAVIGATION = siteData.navigation;
+const site = normalizeContent<SiteContent>(siteData);
+
+export const BRAND = site.brand;
+export const CONTACT = site.contact;
+export const NAVIGATION = site.navigation;
 
 export const ICONS = {
   Phone: (props: React.SVGProps<SVGSVGElement>) => (

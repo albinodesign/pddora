@@ -2,9 +2,10 @@ import React from 'react';
 import { BRAND, ICONS } from '@/constants';
 import ueberUnsData from '@/src/content/pages/ueber-uns.json';
 import type { UeberUnsContent } from '@/src/content/types';
+import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const ueberUns: UeberUnsContent = ueberUnsData;
+const ueberUns = normalizeContent<UeberUnsContent>(ueberUnsData);
 
 export const metadata: Metadata = {
   title: ueberUns.meta.title,

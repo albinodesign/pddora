@@ -5,8 +5,9 @@ import { useSearchParams } from 'next/navigation';
 import { CONTACT, ICONS } from '@/constants';
 import kontaktData from '@/src/content/pages/kontakt.json';
 import type { KontaktContent } from '@/src/content/types';
+import { normalizeContent } from '@/src/content/normalize';
 
-const kontakt: KontaktContent = kontaktData;
+const kontakt = normalizeContent<KontaktContent>(kontaktData);
 
 function ContactContent() {
   const searchParams = useSearchParams();

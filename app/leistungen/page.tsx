@@ -4,9 +4,10 @@ import ServiceCard from '@/components/ServiceCard';
 import { CONTACT, ICONS } from '@/constants';
 import leistungenData from '@/src/content/pages/leistungen.json';
 import type { LeistungenContent } from '@/src/content/types';
+import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const leistungen: LeistungenContent = leistungenData;
+const leistungen = normalizeContent<LeistungenContent>(leistungenData);
 
 export const metadata: Metadata = {
   title: leistungen.meta.title,
