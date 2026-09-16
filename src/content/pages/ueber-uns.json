@@ -10,12 +10,12 @@
   "philosophy": {
     "title": "Unsere Philosophie",
     "text": "Pflege ist für uns mehr als nur eine Dienstleistung. Es ist eine Begegnung auf Augenhöhe. In der Dora GmbH arbeiten wir täglich daran, Vertrauen zu schaffen und Sicherheit zu geben. Unser Team besteht aus qualifizierten Fachkräften, die ihre Arbeit mit Leidenschaft und Empathie ausüben.",
-    "values": [
-      "Individuelle Pflegeplanung",
-      "Respektvolle Kommunikation",
-      "Höchste fachliche Standards",
-      "Kontinuität durch Bezugspflege"
-    ],
+    "values": {
+      "pflegeplanung": "Individuelle Pflegeplanung",
+      "kommunikation": "Respektvolle Kommunikation",
+      "standards": "Höchste fachliche Standards",
+      "bezugspflege": "Kontinuität durch Bezugspflege"
+    },
     "image": {
       "src": "/uberuns.webp?v=20260129",
       "alt": "Nursing staff"
@@ -24,11 +24,11 @@
   },
   "security": {
     "title": "Ihre Sicherheit ist unser Anspruch",
-    "boxes": [
-      { "label": "Erfahrung", "text": "Langjährige Expertise in der ambulanten Pflege." },
-      { "label": "Qualifikation", "text": "Regelmäßige Fort- und Weiterbildungen für unser Team." },
-      { "label": "Erreichbarkeit", "text": "Für Notfälle rund um die Uhr als verlässlicher Partner." },
-      { "label": "Beratung", "text": "Individuelle Hilfe bei Anträgen und Finanzierungsfragen." }
-    ]
+    "boxes": {
+      "erfahrung": { "label": "Erfahrung", "text": "Langjährige Expertise in der ambulanten Pflege." },
+      "qualifikation": { "label": "Qualifikation", "text": "Regelmäßige Fort- und Weiterbildungen für unser Team." },
+      "erreichbarkeit": { "label": "Erreichbarkeit", "text": "Für Notfälle rund um die Uhr als verlässlicher Partner." },
+      "beratung": { "label": "Beratung", "text": "Individuelle Hilfe bei Anträgen und Finanzierungsfragen." }
+    }
   }
 }

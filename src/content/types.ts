@@ -20,7 +20,7 @@ export interface SiteContent {
     city: string;
     serviceArea: string;
   };
-  navigation: NavItem[];
+  navigation: Record<string, NavItem>;
   header: {
     logoSrc: string;
     logoAlt: string;
@@ -99,12 +99,12 @@ export interface HomeContent {
     eyebrow: string;
     title: string;
     linkLabel: string;
-    items: { title: string; desc: string; img: string }[];
+    items: Record<string, { title: string; desc: string; img: string }>;
   };
   whyUs: {
     eyebrow: string;
     title: string;
-    features: { title: string; desc: string }[];
+    features: Record<string, { title: string; desc: string }>;
     cta: string;
     image: CmsImage;
     badgeValue: string;
@@ -152,15 +152,15 @@ export interface KontaktContent {
 export interface LeistungenContent {
   meta: { title: string; description: string };
   intro: { accent: string; title: string; description: string };
-  services: { title: string; description: string; features: string[] }[];
+  services: Record<string, { title: string; description: string; features: Record<string, string> }>;
   usp: {
     title: string;
     subline: string;
-    items: { title: string; desc: string }[];
+    items: Record<string, { title: string; desc: string }>;
   };
   steps: {
     title: string;
-    items: { step: number; title: string; desc: string }[];
+    items: Record<string, { step: number; title: string; desc: string }>;
   };
   cta: { title: string; text: string };
 }
@@ -171,13 +171,13 @@ export interface UeberUnsContent {
   philosophy: {
     title: string;
     text: string;
-    values: string[];
+    values: Record<string, string>;
     image: CmsImage;
     overlayQuote: string;
   };
   security: {
     title: string;
-    boxes: { label: string; text: string }[];
+    boxes: Record<string, { label: string; text: string }>;
   };
 }
 

@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import notFoundData from '@/src/content/pages/not-found.json';
 import type { NotFoundContent } from '@/src/content/types';
-import { normalizeContent } from '@/src/content/normalize';
 
-const notFound = normalizeContent<NotFoundContent>(notFoundData);
+const notFound: NotFoundContent = notFoundData;
 
 export const metadata = {
   title: notFound.meta.title,

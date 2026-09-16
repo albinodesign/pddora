@@ -2,10 +2,9 @@ import React from 'react';
 import { BRAND, CONTACT } from '@/constants';
 import impressumData from '@/src/content/pages/impressum.json';
 import type { ImpressumContent } from '@/src/content/types';
-import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const impressum = normalizeContent<ImpressumContent>(impressumData);
+const impressum: ImpressumContent = impressumData;
 
 export const metadata: Metadata = {
   title: impressum.meta.title,

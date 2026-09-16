@@ -2,10 +2,9 @@ import React from 'react';
 import { BRAND, ICONS } from '@/constants';
 import ueberUnsData from '@/src/content/pages/ueber-uns.json';
 import type { UeberUnsContent } from '@/src/content/types';
-import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const ueberUns = normalizeContent<UeberUnsContent>(ueberUnsData);
+const ueberUns: UeberUnsContent = ueberUnsData;
 
 export const metadata: Metadata = {
   title: ueberUns.meta.title,
@@ -35,10 +34,10 @@ export default function AboutPage() {
                 {ueberUns.philosophy.text}
               </p>
               <div className="space-y-4">
-                {ueberUns.philosophy.values.map((val, i) => (
-                  <div key={i} className="flex items-center gap-3">
+                {Object.entries(ueberUns.philosophy.values).map(([key, val]) => (
+                  <div key={key} className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-brand"></div>
-                    <span className="font-semibold text-brand-dark" data-cms-field={`ueberuns.philosophy.values.${i}`}>{val}</span>
+                    <span className="font-semibold text-brand-dark" data-cms-field={`ueberuns.philosophy.values.${key}`}>{val}</span>
                   </div>
                 ))}
               </div>
@@ -68,10 +67,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-serif font-bold text-brand mb-12" data-cms-field="ueberuns.security.title">{ueberUns.security.title}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {ueberUns.security.boxes.map((box, i) => (
-              <div key={i} className="bg-white p-6 rounded-2xl border border-brand/5 shadow-sm">
-                <h4 className="font-bold text-brand mb-2" data-cms-field={`ueberuns.security.boxes.${i}.label`}>{box.label}</h4>
-                <p className="text-sm text-gray-600" data-cms-field={`ueberuns.security.boxes.${i}.text`}>{box.text}</p>
+            {Object.entries(ueberUns.security.boxes).map(([key, box]) => (
+              <div key={key} className="bg-white p-6 rounded-2xl border border-brand/5 shadow-sm">
+                <h4 className="font-bold text-brand mb-2" data-cms-field={`ueberuns.security.boxes.${key}.label`}>{box.label}</h4>
+                <p className="text-sm text-gray-600" data-cms-field={`ueberuns.security.boxes.${key}.text`}>{box.text}</p>
               </div>
             ))}
           </div>

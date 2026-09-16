@@ -6,10 +6,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import siteData from '@/src/content/site.json';
-import { normalizeContent } from '@/src/content/normalize';
 import type { SiteContent } from '@/src/content/types';
 
-const siteMeta = normalizeContent<SiteContent>(siteData).metadata;
+const siteMeta: SiteContent['metadata'] = siteData.metadata;
 
 
 const inter = Inter({

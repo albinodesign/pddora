@@ -2,10 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import { BRAND, CONTACT, ICONS } from '@/constants';
 import siteData from '@/src/content/site.json';
-import { normalizeContent } from '@/src/content/normalize';
 import type { SiteContent } from '@/src/content/types';
 
-const footer = normalizeContent<SiteContent>(siteData).footer;
+const footer: SiteContent['footer'] = siteData.footer;
 
 const Footer: React.FC = () => {
   return (

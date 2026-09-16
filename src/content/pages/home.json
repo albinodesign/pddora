@@ -25,45 +25,45 @@
     "eyebrow": "Was wir bieten",
     "title": "Wie wir Ihnen helfen",
     "linkLabel": "Mehr erfahren",
-    "items": [
-      {
+    "items": {
+      "grundpflege": {
         "title": "Grundpflege",
         "desc": "Würdevolle Unterstützung bei Körperpflege, Ernährung und Mobilität im vertrauten Zuhause.",
         "img": "/2.webp?v=20260129"
       },
-      {
+      "behandlungspflege": {
         "title": "Behandlungspflege",
         "desc": "Fachgerechte medizinische Versorgung nach ärztlicher Verordnung durch unsere Profis.",
         "img": "/3.webp?v=20260129"
       },
-      {
+      "hauswirtschaft": {
         "title": "Hauswirtschaft",
         "desc": "Wir halten Ihnen den Rücken frei und unterstützen Sie zuverlässig bei alltäglichen Aufgaben.",
         "img": "/4.webp?v=20260129"
       }
-    ]
+    }
   },
   "whyUs": {
     "eyebrow": "Warum wir?",
     "title": "Menschlichkeit ist unsere höchste Priorität.",
-    "features": [
-      {
+    "features": {
+      "bezugspflege": {
         "title": "Bezugspflege",
         "desc": "Wir setzen auf feste Ansprechpartner für echtes Vertrauen."
       },
-      {
+      "erreichbarkeit": {
         "title": "24h Erreichbarkeit",
         "desc": "Im Notfall sind wir rund um die Uhr als verlässlicher Partner an Ihrer Seite."
       },
-      {
+      "beratung": {
         "title": "Individuelle Beratung",
         "desc": "Wir nehmen uns Zeit für Ihre Situation und planen maßgeschneidert."
       },
-      {
+      "qualitaet": {
         "title": "Höchste Qualität",
         "desc": "Regelmäßige Schulungen sichern erstklassige medizinische Standards."
       }
-    ],
+    },
     "cta": "Mehr über unser Team erfahren",
     "image": {
       "src": "/warumwir.webp?v=20260129",

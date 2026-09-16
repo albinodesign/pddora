@@ -51,7 +51,6 @@ Die gesamte Anwendung läuft ausschließlich über **Next.js App Router** mit st
 ├── src/content/                      # CMS-entkoppelte Inhalte – ALLE Texte & Bild-Referenzen liegen hier
 │   ├── site.json                 # Globale Daten: brand, contact, navigation, header, footer, cookieBanner, metadata, jsonLd
 │   ├── types.ts                  # TypeScript-Interfaces für alle Content-JSONs
-│   ├── normalize.ts              # normalizeContent(): wandelt CMS-Index-Objekte ({"0":..}) zurück in Arrays
 │   ├── cms.manifest.json         # CMS-Manifest: jedes editierbare Feld (id, label, type, file, path, maxLength)
 │   └── pages/                    # Seiteninhalte: home.json, kontakt.json, leistungen.json, ueber-uns.json, impressum.json, datenschutz.json, not-found.json
 ├── types.ts                      # TypeScript-Typdefinitionen (ServiceCardProps, ServiceCardDetails)
@@ -278,11 +277,12 @@ Seit der CMS-Refaktorierung kommen **alle sichtbaren Texte und Bild-Referenzen a
 - `src/content/site.json` — globale Unternehmensdaten: `brand`, `contact`, `navigation`, `header`, `footer`, `cookieBanner`, `metadata` (globale SEO-Werte aus `layout.tsx`), `jsonLd` (Structured Data der Startseite)
 - `src/content/pages/*.json` — Seiteninhalte: `home`, `kontakt`, `leistungen`, `ueber-uns`, `impressum`, `datenschutz`, `not-found` (inkl. `meta`-Objekten für die `metadata`-Exports)
 - `src/content/types.ts` — TypeScript-Interfaces für alle Content-JSONs
-- `src/content/normalize.ts` — `normalizeContent<T>()` umschließt jeden JSON-Import (z. B. `const home = normalizeContent<HomeContent>(homeData)`); wandelt vom CMS fälschlich als Index-Objekte geschriebene Arrays (`{"0": ..., "3": ...}`) rekursiv zurück in Arrays, damit der Build nicht bricht. Bei neuen Content-Imports immer verwenden.
 - `src/content/cms.manifest.json` — CMS-Manifest mit **271 editierbaren Feldern** in 14 Sektionen (u. a. "Startseite - Hero", "Startseite - Leistungen (Karte 1..3)", "Kontaktseite", "Header/Footer", "Cookie-Banner", "Globale Unternehmensdaten"). Jedes Feld hat `id`, `label`, `type` (text/textarea/image), `file`, `path` (JSON-Pfad) und `maxLength`. Enthält `features: { "blog": false }` (die Website hat keinen Blog).
 
+**Wichtig — keine Arrays in Content-JSONs:** Sammlungen (Navigation, Leistungen, Features, USPs, Steps, Values, Boxes) sind **Objekte mit stabilen kebab-case-String-Schlüsseln** (z. B. `services.behandlungspflege`, `navigation.startseite`, `steps.items.erstkontakt`), nicht Arrays. Grund: Das CMS patched JSONs über die Manifest-Pfade und kommt mit numerischen Array-Indizes nicht klar — bei Pfaden wie `services.3.description` ersetzte es das gesamte Array durch ein Index-Objekt und löschte dabei alle anderen Einträge. Objekt-Pfade mit String-Keys patched es korrekt. Die Schlüsselreihenfolge im JSON entspricht der früheren Array-Reihenfolge; Komponenten iterieren mit `Object.entries(...)`/`Object.values(...)` (Einfügereihenfolge bleibt erhalten), Typen sind `Record<string, T>`. Die frühere `normalizeContent()`-Hilfsfunktion (Index-Objekt → Array) wurde damit obsolet und entfernt; JSON-Imports werden direkt typisiert (`const home: HomeContent = homeData`).
+
 ### DOM-Marker & Preview-Bridge
-- Sektionen tragen `data-cms-section="..."` (z. B. `home.hero`), editierbare Text-/Bild-Tags `data-cms-field="..."` (Feld-`id` aus dem Manifest; Listen mit Index, z. B. `home.services.0.title`)
+- Sektionen tragen `data-cms-section="..."` (z. B. `home.hero`), editierbare Text-/Bild-Tags `data-cms-field="..."` (Feld-`id` aus dem Manifest; Listen mit String-Schlüssel, z. B. `home.services.grundpflege.title`)
 - `app/layout.tsx` enthält eine Inline-Preview-Bridge (`dangerouslySetInnerHTML`): ein `message`-Listener verarbeitet `postMessage`-Events vom Typ `CMS_FIELD_UPDATE` mit `{ fieldId, value }` und aktualisiert das Element mit passendem `data-cms-field` (bei `<img>` das `src`-Attribut, sonst `textContent`). Harmlos in Produktion.
 
 ### Texte ändern

@@ -1,10 +1,9 @@
 
 import React from 'react';
 import siteData from '@/src/content/site.json';
-import { normalizeContent } from '@/src/content/normalize';
 import type { SiteContent } from '@/src/content/types';
 
-const site = normalizeContent<SiteContent>(siteData);
+const site: SiteContent = siteData;
 
 export const BRAND = site.brand;
 export const CONTACT = site.contact;

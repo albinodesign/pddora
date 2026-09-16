@@ -4,10 +4,9 @@ import ServiceCard from '@/components/ServiceCard';
 import { CONTACT, ICONS } from '@/constants';
 import leistungenData from '@/src/content/pages/leistungen.json';
 import type { LeistungenContent } from '@/src/content/types';
-import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const leistungen = normalizeContent<LeistungenContent>(leistungenData);
+const leistungen: LeistungenContent = leistungenData;
 
 export const metadata: Metadata = {
   title: leistungen.meta.title,
@@ -42,14 +41,14 @@ export default function ServicesPage() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-20" data-cms-section="leistungen.services">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {leistungen.services.map((service, idx) => (
+          {Object.entries(leistungen.services).map(([key, service], idx) => (
             <ServiceCard 
-              key={idx}
+              key={key}
               title={service.title}
               description={service.description}
               icon={serviceIcons[idx]}
               features={service.features}
-              cmsPrefix={`leistungen.services.${idx}`}
+              cmsPrefix={`leistungen.services.${key}`}
             />
           ))}
         </div>
@@ -63,13 +62,13 @@ export default function ServicesPage() {
             <p className="text-gray-500 mt-4" data-cms-field="leistungen.usp.subline">{leistungen.usp.subline}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {leistungen.usp.items.map((usp, i) => (
-              <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm text-center">
+            {Object.entries(leistungen.usp.items).map(([key, usp], i) => (
+              <div key={key} className="bg-white p-10 rounded-[2.5rem] shadow-sm text-center">
                 <div className="w-16 h-16 bg-brand/5 rounded-2xl flex items-center justify-center text-brand mx-auto mb-6">
                   {uspIcons[i]}
                 </div>
-                <h4 className="text-xl font-bold text-brand mb-4" data-cms-field={`leistungen.usp.items.${i}.title`}>{usp.title}</h4>
-                <p className="text-brand-dark text-base leading-relaxed font-medium" data-cms-field={`leistungen.usp.items.${i}.desc`}>{usp.desc}</p>
+                <h4 className="text-xl font-bold text-brand mb-4" data-cms-field={`leistungen.usp.items.${key}.title`}>{usp.title}</h4>
+                <p className="text-brand-dark text-base leading-relaxed font-medium" data-cms-field={`leistungen.usp.items.${key}.desc`}>{usp.desc}</p>
               </div>
             ))}
           </div>
@@ -80,12 +79,12 @@ export default function ServicesPage() {
       <section className="py-32 max-w-4xl mx-auto px-4" data-cms-section="leistungen.steps">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand text-center mb-16" data-cms-field="leistungen.steps.title">{leistungen.steps.title}</h2>
         <div className="space-y-10">
-          {leistungen.steps.items.map((item, idx) => (
-            <div key={idx} className="flex gap-8 group">
+          {Object.entries(leistungen.steps.items).map(([key, item]) => (
+            <div key={key} className="flex gap-8 group">
               <div className="w-16 h-16 shrink-0 rounded-full bg-brand text-white flex items-center justify-center text-2xl font-black shadow-lg group-hover:scale-110 transition-transform">{item.step}</div>
               <div>
-                <h4 className="text-xl font-bold text-brand mb-2" data-cms-field={`leistungen.steps.items.${idx}.title`}>{item.title}</h4>
-                <p className="text-gray-600 leading-relaxed" data-cms-field={`leistungen.steps.items.${idx}.desc`}>{item.desc}</p>
+                <h4 className="text-xl font-bold text-brand mb-2" data-cms-field={`leistungen.steps.items.${key}.title`}>{item.title}</h4>
+                <p className="text-gray-600 leading-relaxed" data-cms-field={`leistungen.steps.items.${key}.desc`}>{item.desc}</p>
               </div>
             </div>
           ))}

@@ -4,10 +4,9 @@ import { BRAND, CONTACT, ICONS } from '@/constants';
 import siteData from '@/src/content/site.json';
 import homeData from '@/src/content/pages/home.json';
 import type { HomeContent } from '@/src/content/types';
-import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const home = normalizeContent<HomeContent>(homeData);
+const home: HomeContent = homeData;
 
 export const metadata: Metadata = {
   title: home.meta.title,
@@ -109,17 +108,17 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {home.services.items.map((s, idx) => (
-              <div key={idx} className="group bg-white rounded-[2.5rem] shadow-sm overflow-hidden border border-brand/5 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+            {Object.entries(home.services.items).map(([key, s], idx) => (
+              <div key={key} className="group bg-white rounded-[2.5rem] shadow-sm overflow-hidden border border-brand/5 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                 <div className="h-64 overflow-hidden relative">
-                  <img src={s.img} alt={s.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-cms-field={`home.services.${idx}.img`} />
+                  <img src={s.img} alt={s.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-cms-field={`home.services.${key}.img`} />
                   <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl text-brand shadow-lg">
                     {serviceIcons[idx]}
                   </div>
                 </div>
                 <div className="p-10">
-                  <h4 className="text-2xl font-serif font-bold text-brand mb-4" data-cms-field={`home.services.${idx}.title`}>{s.title}</h4>
-                  <p className="text-gray-600 mb-8 leading-relaxed line-clamp-3" data-cms-field={`home.services.${idx}.desc`}>{s.desc}</p>
+                  <h4 className="text-2xl font-serif font-bold text-brand mb-4" data-cms-field={`home.services.${key}.title`}>{s.title}</h4>
+                  <p className="text-gray-600 mb-8 leading-relaxed line-clamp-3" data-cms-field={`home.services.${key}.desc`}>{s.desc}</p>
                   <Link href="/leistungen" className="inline-flex items-center gap-2 text-brand font-black text-sm uppercase tracking-widest hover:gap-4 transition-all">
                     <span data-cms-field="home.services.linkLabel">{home.services.linkLabel}</span> <span>→</span>
                   </Link>
@@ -141,14 +140,14 @@ export default function HomePage() {
               <h3 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark mb-12 leading-tight" data-cms-field="home.whyUs.title">{home.whyUs.title}</h3>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-                {home.whyUs.features.map((f, idx) => (
-                  <div key={idx} className="flex gap-4">
+                {Object.entries(home.whyUs.features).map(([key, f], idx) => (
+                  <div key={key} className="flex gap-4">
                     <div className="w-12 h-12 shrink-0 rounded-2xl bg-brand-accent flex items-center justify-center text-brand">
                       {whyUsIcons[idx]}
                     </div>
                     <div>
-                      <h5 className="font-bold text-brand-dark mb-1" data-cms-field={`home.whyUs.features.${idx}.title`}>{f.title}</h5>
-                      <p className="text-sm text-gray-500 leading-relaxed" data-cms-field={`home.whyUs.features.${idx}.desc`}>{f.desc}</p>
+                      <h5 className="font-bold text-brand-dark mb-1" data-cms-field={`home.whyUs.features.${key}.title`}>{f.title}</h5>
+                      <p className="text-sm text-gray-500 leading-relaxed" data-cms-field={`home.whyUs.features.${key}.desc`}>{f.desc}</p>
                     </div>
                   </div>
                 ))}

@@ -13,12 +13,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, fea
       <h3 className="text-3xl font-serif font-bold text-brand mb-6 leading-tight" data-cms-field={cmsPrefix ? `${cmsPrefix}.title` : undefined}>{title}</h3>
       <p className="text-gray-600 mb-10 text-lg leading-relaxed flex-grow" data-cms-field={cmsPrefix ? `${cmsPrefix}.description` : undefined}>{description}</p>
       
-      {features && features.length > 0 && (
+      {features && Object.keys(features).length > 0 && (
         <ul className="space-y-4 pt-8 border-t border-brand/10">
-          {features.map((feature, idx) => (
-            <li key={idx} className="flex items-center gap-4 text-xs font-black uppercase tracking-[0.15em] text-brand/60">
+          {Object.entries(features).map(([key, feature]) => (
+            <li key={key} className="flex items-center gap-4 text-xs font-black uppercase tracking-[0.15em] text-brand/60">
               <ICONS.Check className="w-5 h-5 text-brand" />
-              <span data-cms-field={cmsPrefix ? `${cmsPrefix}.features.${idx}` : undefined}>{feature}</span>
+              <span data-cms-field={cmsPrefix ? `${cmsPrefix}.features.${key}` : undefined}>{feature}</span>
             </li>
           ))}
         </ul>

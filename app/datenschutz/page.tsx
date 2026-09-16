@@ -1,10 +1,9 @@
 import React from 'react';
 import datenschutzData from '@/src/content/pages/datenschutz.json';
 import type { DatenschutzContent } from '@/src/content/types';
-import { normalizeContent } from '@/src/content/normalize';
 import type { Metadata } from 'next';
 
-const datenschutz = normalizeContent<DatenschutzContent>(datenschutzData);
+const datenschutz: DatenschutzContent = datenschutzData;
 
 export const metadata: Metadata = {
   title: datenschutz.meta.title,

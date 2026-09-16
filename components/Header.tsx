@@ -5,10 +5,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NAVIGATION, CONTACT, ICONS } from '@/constants';
 import siteData from '@/src/content/site.json';
-import { normalizeContent } from '@/src/content/normalize';
 import type { SiteContent } from '@/src/content/types';
 
-const header = normalizeContent<SiteContent>(siteData).header;
+const header: SiteContent['header'] = siteData.header;
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +35,7 @@ const Header: React.FC = () => {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8" aria-label={header.navAriaLabel}>
-            {NAVIGATION.map((item, idx) => (
+            {Object.entries(NAVIGATION).map(([key, item]) => (
               <Link
                 key={item.name}
                 href={item.path}
@@ -44,7 +43,7 @@ const Header: React.FC = () => {
                   pathname === item.path ? 'text-brand border-b-2 border-brand pb-1' : 'text-gray-600'
                 }`}
                 aria-current={pathname === item.path ? 'page' : undefined}
-                data-cms-field={`navigation.${idx}.name`}
+                data-cms-field={`navigation.${key}.name`}
               >
                 {item.name}
               </Link>
@@ -82,7 +81,7 @@ const Header: React.FC = () => {
 
       <div className={`md:hidden bg-white border-t border-gray-100 ${isOpen ? 'block' : 'hidden'}`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {NAVIGATION.map((item) => (
+          {Object.values(NAVIGATION).map((item) => (
             <Link
               key={item.name}
               href={item.path}

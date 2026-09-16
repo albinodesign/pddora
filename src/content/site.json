@@ -15,12 +15,12 @@
     "city": "Offenbach",
     "serviceArea": "Alle Stadtteile in Offenbach und Frankfurt am Main. Auf Anfrage bedienen wir auch andere Gebiete."
   },
-  "navigation": [
-    { "name": "Startseite", "path": "/" },
-    { "name": "Leistungen", "path": "/leistungen" },
-    { "name": "Über Uns", "path": "/ueber-uns" },
-    { "name": "Kontakt", "path": "/kontakt" }
-  ],
+  "navigation": {
+    "startseite": { "name": "Startseite", "path": "/" },
+    "leistungen": { "name": "Leistungen", "path": "/leistungen" },
+    "ueber-uns": { "name": "Über Uns", "path": "/ueber-uns" },
+    "kontakt": { "name": "Kontakt", "path": "/kontakt" }
+  },
   "header": {
     "logoSrc": "/logo.jpeg?v=20260129",
     "logoAlt": "Dora GmbH Logo",

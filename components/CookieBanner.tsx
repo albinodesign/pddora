@@ -3,10 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import siteData from '@/src/content/site.json';
-import { normalizeContent } from '@/src/content/normalize';
 import type { SiteContent } from '@/src/content/types';
 
-const cookie = normalizeContent<SiteContent>(siteData).cookieBanner;
+const cookie: SiteContent['cookieBanner'] = siteData.cookieBanner;
 
 const CookieBanner: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
