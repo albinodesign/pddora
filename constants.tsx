@@ -1,6 +1,6 @@
 
 import React from 'react';
-import siteData from '@/content/site.json';
+import siteData from '@/src/content/site.json';
 
 export const BRAND = siteData.brand;
 export const CONTACT = siteData.contact;

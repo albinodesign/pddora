@@ -47,8 +47,8 @@ Die gesamte Anwendung läuft ausschließlich über **Next.js App Router** mit st
 │   ├── robots.txt                # SEO-Robots
 │   ├── sitemap.xml               # SEO-Sitemap
 │   └── site.webmanifest          # PWA-Manifest
-├── constants.tsx                 # Re-Exporte aus content/site.json (BRAND, CONTACT, NAVIGATION) + SVG-Icons (ICONS)
-├── content/                      # CMS-entkoppelte Inhalte – ALLE Texte & Bild-Referenzen liegen hier
+├── constants.tsx                 # Re-Exporte aus src/content/site.json (BRAND, CONTACT, NAVIGATION) + SVG-Icons (ICONS)
+├── src/content/                      # CMS-entkoppelte Inhalte – ALLE Texte & Bild-Referenzen liegen hier
 │   ├── site.json                 # Globale Daten: brand, contact, navigation, header, footer, cookieBanner, metadata, jsonLd
 │   ├── types.ts                  # TypeScript-Interfaces für alle Content-JSONs
 │   ├── cms.manifest.json         # CMS-Manifest: jedes editierbare Feld (id, label, type, file, path, maxLength)
@@ -175,7 +175,7 @@ Es existiert keine aktive API-Route mehr für Formularversand (das Verzeichnis `
 
 ## Marken-Konstanten
 
-Aus `content/site.json` (in `constants.tsx` als `BRAND`, `CONTACT`, `NAVIGATION` re-exportiert):
+Aus `src/content/site.json` (in `constants.tsx` als `BRAND`, `CONTACT`, `NAVIGATION` re-exportiert):
 
 ```typescript
 BRAND.name: "Ambulanter Pflegedienst Dora GmbH"
@@ -251,10 +251,10 @@ Bei Bildänderungen muss das Datum in allen betroffenen Dateien aktualisiert wer
 2. `page.tsx` mit Komponenten-Export hinzufügen
 3. `metadata`-Export für SEO-Titel definieren
 4. `PageIntro`-Komponente für einheitliche Überschriften verwenden
-5. Bei Bedarf Link in `content/site.json` → `navigation` ergänzen (wird in `constants.tsx` als `NAVIGATION` re-exportiert)
+5. Bei Bedarf Link in `src/content/site.json` → `navigation` ergänzen (wird in `constants.tsx` als `NAVIGATION` re-exportiert)
 
 ### Kontaktdaten aktualisieren
-`content/site.json` bearbeiten (Abschnitt `contact`) – `constants.tsx` re-exportiert die Werte, Änderungen propagieren automatisch in alle Komponenten.
+`src/content/site.json` bearbeiten (Abschnitt `contact`) – `constants.tsx` re-exportiert die Werte, Änderungen propagieren automatisch in alle Komponenten.
 
 ### Neue Icons hinzufügen
 SVG-Komponente in `constants.tsx` unter `ICONS` ergänzen.
@@ -272,19 +272,19 @@ Anschließend den `out/`-Ordner committen, damit die Änderungen auf Netlify liv
 
 ## Content-Management (CMS-Entkopplung)
 
-Seit der CMS-Refaktorierung kommen **alle sichtbaren Texte und Bild-Referenzen aus JSON-Dateien** unter `content/` — im JSX steht kein statischer deutscher Text mehr (Ausnahmen: rein technische Strings wie aria-hidden, className, Formular-Feldnamen).
+Seit der CMS-Refaktorierung kommen **alle sichtbaren Texte und Bild-Referenzen aus JSON-Dateien** unter `src/content/` — im JSX steht kein statischer deutscher Text mehr (Ausnahmen: rein technische Strings wie aria-hidden, className, Formular-Feldnamen).
 
-- `content/site.json` — globale Unternehmensdaten: `brand`, `contact`, `navigation`, `header`, `footer`, `cookieBanner`, `metadata` (globale SEO-Werte aus `layout.tsx`), `jsonLd` (Structured Data der Startseite)
-- `content/pages/*.json` — Seiteninhalte: `home`, `kontakt`, `leistungen`, `ueber-uns`, `impressum`, `datenschutz`, `not-found` (inkl. `meta`-Objekten für die `metadata`-Exports)
-- `content/types.ts` — TypeScript-Interfaces für alle Content-JSONs; die JSON-Imports in den Komponenten sind damit annotiert (z. B. `const home: HomeContent = homeData`)
-- `content/cms.manifest.json` — CMS-Manifest mit **271 editierbaren Feldern** in 14 Sektionen (u. a. "Startseite - Hero", "Startseite - Leistungen (Karte 1..3)", "Kontaktseite", "Header/Footer", "Cookie-Banner", "Globale Unternehmensdaten"). Jedes Feld hat `id`, `label`, `type` (text/textarea/image), `file`, `path` (JSON-Pfad) und `maxLength`. Enthält `features: { "blog": false }` (die Website hat keinen Blog).
+- `src/content/site.json` — globale Unternehmensdaten: `brand`, `contact`, `navigation`, `header`, `footer`, `cookieBanner`, `metadata` (globale SEO-Werte aus `layout.tsx`), `jsonLd` (Structured Data der Startseite)
+- `src/content/pages/*.json` — Seiteninhalte: `home`, `kontakt`, `leistungen`, `ueber-uns`, `impressum`, `datenschutz`, `not-found` (inkl. `meta`-Objekten für die `metadata`-Exports)
+- `src/content/types.ts` — TypeScript-Interfaces für alle Content-JSONs; die JSON-Imports in den Komponenten sind damit annotiert (z. B. `const home: HomeContent = homeData`)
+- `src/content/cms.manifest.json` — CMS-Manifest mit **271 editierbaren Feldern** in 14 Sektionen (u. a. "Startseite - Hero", "Startseite - Leistungen (Karte 1..3)", "Kontaktseite", "Header/Footer", "Cookie-Banner", "Globale Unternehmensdaten"). Jedes Feld hat `id`, `label`, `type` (text/textarea/image), `file`, `path` (JSON-Pfad) und `maxLength`. Enthält `features: { "blog": false }` (die Website hat keinen Blog).
 
 ### DOM-Marker & Preview-Bridge
 - Sektionen tragen `data-cms-section="..."` (z. B. `home.hero`), editierbare Text-/Bild-Tags `data-cms-field="..."` (Feld-`id` aus dem Manifest; Listen mit Index, z. B. `home.services.0.title`)
 - `app/layout.tsx` enthält eine Inline-Preview-Bridge (`dangerouslySetInnerHTML`): ein `message`-Listener verarbeitet `postMessage`-Events vom Typ `CMS_FIELD_UPDATE` mit `{ fieldId, value }` und aktualisiert das Element mit passendem `data-cms-field` (bei `<img>` das `src`-Attribut, sonst `textContent`). Harmlos in Produktion.
 
 ### Texte ändern
-Texte/Bilder in der passenden JSON-Datei unter `content/` ändern, danach `npm run build` ausführen und `out/` committen. Bei neuen Feldern das Manifest (`content/cms.manifest.json`) und ggf. `content/types.ts` mitpflegen.
+Texte/Bilder in der passenden JSON-Datei unter `src/content/` ändern, danach `npm run build` ausführen und `out/` committen. Bei neuen Feldern das Manifest (`src/content/cms.manifest.json`) und ggf. `src/content/types.ts` mitpflegen.
 
 ---
 

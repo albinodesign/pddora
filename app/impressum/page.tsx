@@ -1,7 +1,7 @@
 import React from 'react';
 import { BRAND, CONTACT } from '@/constants';
-import impressumData from '@/content/pages/impressum.json';
-import type { ImpressumContent } from '@/content/types';
+import impressumData from '@/src/content/pages/impressum.json';
+import type { ImpressumContent } from '@/src/content/types';
 import type { Metadata } from 'next';
 
 const impressum: ImpressumContent = impressumData;

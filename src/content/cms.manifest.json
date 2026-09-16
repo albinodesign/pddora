@@ -14,7 +14,7 @@
           "id": "brand.name",
           "label": "Firmenname",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "brand.name",
           "maxLength": 120
         },
@@ -22,7 +22,7 @@
           "id": "brand.tagline",
           "label": "Slogan",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "brand.tagline",
           "maxLength": 160
         },
@@ -30,7 +30,7 @@
           "id": "brand.primaryColor",
           "label": "Primärfarbe",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "brand.primaryColor",
           "maxLength": 20
         },
@@ -38,7 +38,7 @@
           "id": "brand.quote",
           "label": "Unternehmens-Zitat",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "brand.quote",
           "maxLength": 500
         },
@@ -46,7 +46,7 @@
           "id": "contact.phone",
           "label": "Telefonnummer",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.phone",
           "maxLength": 40
         },
@@ -54,7 +54,7 @@
           "id": "contact.mobile",
           "label": "Mobilnummer",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.mobile",
           "maxLength": 40
         },
@@ -62,7 +62,7 @@
           "id": "contact.fax",
           "label": "Faxnummer",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.fax",
           "maxLength": 40
         },
@@ -70,7 +70,7 @@
           "id": "contact.email",
           "label": "E-Mail-Adresse",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.email",
           "maxLength": 120
         },
@@ -78,7 +78,7 @@
           "id": "contact.address",
           "label": "Adresse",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.address",
           "maxLength": 200
         },
@@ -86,7 +86,7 @@
           "id": "contact.openingHours",
           "label": "Öffnungszeiten",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.openingHours",
           "maxLength": 100
         },
@@ -94,7 +94,7 @@
           "id": "contact.city",
           "label": "Stadt",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.city",
           "maxLength": 80
         },
@@ -102,7 +102,7 @@
           "id": "contact.serviceArea",
           "label": "Einzugsgebiet",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "contact.serviceArea",
           "maxLength": 300
         },
@@ -110,7 +110,7 @@
           "id": "navigation.0.name",
           "label": "Navigation Eintrag 1 – Name",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.0.name",
           "maxLength": 60
         },
@@ -118,7 +118,7 @@
           "id": "navigation.0.path",
           "label": "Navigation Eintrag 1 – Pfad",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.0.path",
           "maxLength": 120
         },
@@ -126,7 +126,7 @@
           "id": "navigation.1.name",
           "label": "Navigation Eintrag 2 – Name",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.1.name",
           "maxLength": 60
         },
@@ -134,7 +134,7 @@
           "id": "navigation.1.path",
           "label": "Navigation Eintrag 2 – Pfad",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.1.path",
           "maxLength": 120
         },
@@ -142,7 +142,7 @@
           "id": "navigation.2.name",
           "label": "Navigation Eintrag 3 – Name",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.2.name",
           "maxLength": 60
         },
@@ -150,7 +150,7 @@
           "id": "navigation.2.path",
           "label": "Navigation Eintrag 3 – Pfad",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.2.path",
           "maxLength": 120
         },
@@ -158,7 +158,7 @@
           "id": "navigation.3.name",
           "label": "Navigation Eintrag 4 – Name",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.3.name",
           "maxLength": 60
         },
@@ -166,7 +166,7 @@
           "id": "navigation.3.path",
           "label": "Navigation Eintrag 4 – Pfad",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "navigation.3.path",
           "maxLength": 120
         },
@@ -174,7 +174,7 @@
           "id": "metadata.title",
           "label": "SEO-Titel (global)",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "metadata.title",
           "maxLength": 200
         },
@@ -182,7 +182,7 @@
           "id": "metadata.description",
           "label": "SEO-Beschreibung (global)",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "metadata.description",
           "maxLength": 400
         },
@@ -190,7 +190,7 @@
           "id": "metadata.ogTitle",
           "label": "OpenGraph-Titel",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "metadata.ogTitle",
           "maxLength": 200
         },
@@ -198,7 +198,7 @@
           "id": "metadata.ogDescription",
           "label": "OpenGraph-Beschreibung",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "metadata.ogDescription",
           "maxLength": 400
         },
@@ -206,7 +206,7 @@
           "id": "metadata.ogUrl",
           "label": "OpenGraph-URL",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "metadata.ogUrl",
           "maxLength": 200
         },
@@ -214,7 +214,7 @@
           "id": "metadata.twitterTitle",
           "label": "Twitter-Titel",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "metadata.twitterTitle",
           "maxLength": 200
         },
@@ -222,7 +222,7 @@
           "id": "metadata.twitterDescription",
           "label": "Twitter-Beschreibung",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "metadata.twitterDescription",
           "maxLength": 400
         },
@@ -230,7 +230,7 @@
           "id": "jsonLd.name",
           "label": "Strukturierte Daten – Name",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.name",
           "maxLength": 120
         },
@@ -238,7 +238,7 @@
           "id": "jsonLd.description",
           "label": "Strukturierte Daten – Beschreibung",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.description",
           "maxLength": 400
         },
@@ -246,7 +246,7 @@
           "id": "jsonLd.url",
           "label": "Strukturierte Daten – URL",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.url",
           "maxLength": 200
         },
@@ -254,7 +254,7 @@
           "id": "jsonLd.telephone",
           "label": "Strukturierte Daten – Telefon",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.telephone",
           "maxLength": 40
         },
@@ -262,7 +262,7 @@
           "id": "jsonLd.streetAddress",
           "label": "Strukturierte Daten – Straße",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.streetAddress",
           "maxLength": 120
         },
@@ -270,7 +270,7 @@
           "id": "jsonLd.addressLocality",
           "label": "Strukturierte Daten – Ort",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.addressLocality",
           "maxLength": 120
         },
@@ -278,7 +278,7 @@
           "id": "jsonLd.postalCode",
           "label": "Strukturierte Daten – PLZ",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.postalCode",
           "maxLength": 20
         },
@@ -286,7 +286,7 @@
           "id": "jsonLd.addressCountry",
           "label": "Strukturierte Daten – Land",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.addressCountry",
           "maxLength": 10
         },
@@ -294,7 +294,7 @@
           "id": "jsonLd.areaServed",
           "label": "Strukturierte Daten – Einzugsgebiet",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.areaServed",
           "maxLength": 200
         },
@@ -302,7 +302,7 @@
           "id": "jsonLd.priceRange",
           "label": "Strukturierte Daten – Preisklasse",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "jsonLd.priceRange",
           "maxLength": 20
         }
@@ -316,7 +316,7 @@
           "id": "header.logo",
           "label": "Header – Logo (Bild)",
           "type": "image",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.logoSrc",
           "maxLength": 300
         },
@@ -324,7 +324,7 @@
           "id": "header.logoAlt",
           "label": "Header – Logo Alt-Text",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.logoAlt",
           "maxLength": 120
         },
@@ -332,7 +332,7 @@
           "id": "header.logoAriaLabel",
           "label": "Header – Logo Aria-Label",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.logoAriaLabel",
           "maxLength": 120
         },
@@ -340,7 +340,7 @@
           "id": "header.brandLine1",
           "label": "Header – Markenzeile 1",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.brandLine1",
           "maxLength": 80
         },
@@ -348,7 +348,7 @@
           "id": "header.brandLine2",
           "label": "Header – Markenzeile 2",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.brandLine2",
           "maxLength": 80
         },
@@ -356,7 +356,7 @@
           "id": "header.navAriaLabel",
           "label": "Header – Navigation Aria-Label",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.navAriaLabel",
           "maxLength": 80
         },
@@ -364,7 +364,7 @@
           "id": "header.menuOpenLabel",
           "label": "Header – Menü öffnen (Aria)",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.menuOpenLabel",
           "maxLength": 80
         },
@@ -372,7 +372,7 @@
           "id": "header.menuCloseLabel",
           "label": "Header – Menü schließen (Aria)",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.menuCloseLabel",
           "maxLength": 80
         },
@@ -380,7 +380,7 @@
           "id": "header.mobileCallCta",
           "label": "Header – Mobiler Anruf-Button",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "header.mobileCallCta",
           "maxLength": 80
         },
@@ -388,7 +388,7 @@
           "id": "footer.tagline",
           "label": "Footer – Slogan",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.tagline",
           "maxLength": 160
         },
@@ -396,7 +396,7 @@
           "id": "footer.description",
           "label": "Footer – Beschreibung",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.description",
           "maxLength": 400
         },
@@ -404,7 +404,7 @@
           "id": "footer.contactHeading",
           "label": "Footer – Überschrift Kontakt",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.contactHeading",
           "maxLength": 60
         },
@@ -412,7 +412,7 @@
           "id": "footer.serviceAreaLabel",
           "label": "Footer – Label Einzugsgebiet",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.serviceAreaLabel",
           "maxLength": 60
         },
@@ -420,7 +420,7 @@
           "id": "footer.faxLabel",
           "label": "Footer – Label Fax",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.faxLabel",
           "maxLength": 60
         },
@@ -428,7 +428,7 @@
           "id": "footer.legalHeading",
           "label": "Footer – Überschrift Rechtliches",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.legalHeading",
           "maxLength": 60
         },
@@ -436,7 +436,7 @@
           "id": "footer.impressumLabel",
           "label": "Footer – Link Impressum",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.impressumLabel",
           "maxLength": 60
         },
@@ -444,7 +444,7 @@
           "id": "footer.datenschutzLabel",
           "label": "Footer – Link Datenschutz",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.datenschutzLabel",
           "maxLength": 80
         },
@@ -452,7 +452,7 @@
           "id": "footer.kontaktLabel",
           "label": "Footer – Link Kontakt",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.kontaktLabel",
           "maxLength": 60
         },
@@ -460,7 +460,7 @@
           "id": "footer.copyrightSuffix",
           "label": "Footer – Copyright-Zusatz",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "footer.copyrightSuffix",
           "maxLength": 120
         }
@@ -474,7 +474,7 @@
           "id": "cookieBanner.title",
           "label": "Cookie-Banner – Titel",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "cookieBanner.title",
           "maxLength": 120
         },
@@ -482,7 +482,7 @@
           "id": "cookieBanner.textPreLink",
           "label": "Cookie-Banner – Text (vor Link)",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "cookieBanner.textPreLink",
           "maxLength": 600
         },
@@ -490,7 +490,7 @@
           "id": "cookieBanner.privacyLinkLabel",
           "label": "Cookie-Banner – Datenschutz-Linktext",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "cookieBanner.privacyLinkLabel",
           "maxLength": 80
         },
@@ -498,7 +498,7 @@
           "id": "cookieBanner.textPostLink",
           "label": "Cookie-Banner – Text (nach Link)",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "cookieBanner.textPostLink",
           "maxLength": 40
         },
@@ -506,7 +506,7 @@
           "id": "cookieBanner.acceptLabel",
           "label": "Cookie-Banner – Akzeptieren-Button",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "cookieBanner.acceptLabel",
           "maxLength": 60
         },
@@ -514,7 +514,7 @@
           "id": "cookieBanner.declineLabel",
           "label": "Cookie-Banner – Ablehnen-Button",
           "type": "text",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "cookieBanner.declineLabel",
           "maxLength": 60
         }
@@ -528,7 +528,7 @@
           "id": "home.meta.title",
           "label": "SEO-Titel Startseite",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "meta.title",
           "maxLength": 200
         },
@@ -536,7 +536,7 @@
           "id": "home.hero.badge",
           "label": "Hero – Badge",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.badge",
           "maxLength": 120
         },
@@ -544,7 +544,7 @@
           "id": "home.hero.titleLine1",
           "label": "Hero – Titel Zeile 1",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.titleLine1",
           "maxLength": 120
         },
@@ -552,7 +552,7 @@
           "id": "home.hero.titleAccent",
           "label": "Hero – Titel Akzentzeile",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.titleAccent",
           "maxLength": 120
         },
@@ -560,7 +560,7 @@
           "id": "home.hero.subtitle",
           "label": "Hero – Untertitel",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.subtitle",
           "maxLength": 300
         },
@@ -568,7 +568,7 @@
           "id": "home.hero.ctaPrimary",
           "label": "Hero – Primärer Button",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.ctaPrimary",
           "maxLength": 80
         },
@@ -576,7 +576,7 @@
           "id": "home.hero.ctaSecondary",
           "label": "Hero – Sekundärer Button",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.ctaSecondary",
           "maxLength": 80
         },
@@ -584,7 +584,7 @@
           "id": "home.hero.image",
           "label": "Hero – Hintergrundbild",
           "type": "image",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.image.src",
           "maxLength": 300
         },
@@ -592,7 +592,7 @@
           "id": "home.hero.imageAlt",
           "label": "Hero – Bild Alt-Text",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "hero.image.alt",
           "maxLength": 200
         }
@@ -606,7 +606,7 @@
           "id": "home.philosophy.quote",
           "label": "Philosophie – Zitat",
           "type": "textarea",
-          "file": "content/site.json",
+          "file": "src/content/site.json",
           "path": "brand.quote",
           "maxLength": 500
         },
@@ -614,7 +614,7 @@
           "id": "home.philosophy.label",
           "label": "Philosophie – Label",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "philosophy.label",
           "maxLength": 80
         },
@@ -622,7 +622,7 @@
           "id": "home.philosophy.image",
           "label": "Philosophie – Bild",
           "type": "image",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "philosophy.image.src",
           "maxLength": 300
         },
@@ -630,7 +630,7 @@
           "id": "home.philosophy.imageAlt",
           "label": "Philosophie – Bild Alt-Text",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "philosophy.image.alt",
           "maxLength": 200
         }
@@ -644,7 +644,7 @@
           "id": "home.services.eyebrow",
           "label": "Leistungen – Eyebrow",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.eyebrow",
           "maxLength": 80
         },
@@ -652,7 +652,7 @@
           "id": "home.services.title",
           "label": "Leistungen – Überschrift",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.title",
           "maxLength": 120
         },
@@ -660,7 +660,7 @@
           "id": "home.services.linkLabel",
           "label": "Leistungen – Linktext",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.linkLabel",
           "maxLength": 60
         },
@@ -668,7 +668,7 @@
           "id": "home.services.0.title",
           "label": "Leistungen Karte 1 (Grundpflege) – Titel",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.0.title",
           "maxLength": 120
         },
@@ -676,7 +676,7 @@
           "id": "home.services.0.desc",
           "label": "Leistungen Karte 1 (Grundpflege) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.0.desc",
           "maxLength": 400
         },
@@ -684,7 +684,7 @@
           "id": "home.services.0.img",
           "label": "Leistungen Karte 1 (Grundpflege) – Bild",
           "type": "image",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.0.img",
           "maxLength": 300
         },
@@ -692,7 +692,7 @@
           "id": "home.services.1.title",
           "label": "Leistungen Karte 2 (Behandlungspflege) – Titel",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.1.title",
           "maxLength": 120
         },
@@ -700,7 +700,7 @@
           "id": "home.services.1.desc",
           "label": "Leistungen Karte 2 (Behandlungspflege) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.1.desc",
           "maxLength": 400
         },
@@ -708,7 +708,7 @@
           "id": "home.services.1.img",
           "label": "Leistungen Karte 2 (Behandlungspflege) – Bild",
           "type": "image",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.1.img",
           "maxLength": 300
         },
@@ -716,7 +716,7 @@
           "id": "home.services.2.title",
           "label": "Leistungen Karte 3 (Hauswirtschaft) – Titel",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.2.title",
           "maxLength": 120
         },
@@ -724,7 +724,7 @@
           "id": "home.services.2.desc",
           "label": "Leistungen Karte 3 (Hauswirtschaft) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.2.desc",
           "maxLength": 400
         },
@@ -732,7 +732,7 @@
           "id": "home.services.2.img",
           "label": "Leistungen Karte 3 (Hauswirtschaft) – Bild",
           "type": "image",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "services.items.2.img",
           "maxLength": 300
         }
@@ -746,7 +746,7 @@
           "id": "home.whyUs.eyebrow",
           "label": "Warum wir – Eyebrow",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.eyebrow",
           "maxLength": 80
         },
@@ -754,7 +754,7 @@
           "id": "home.whyUs.title",
           "label": "Warum wir – Überschrift",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.title",
           "maxLength": 160
         },
@@ -762,7 +762,7 @@
           "id": "home.whyUs.cta",
           "label": "Warum wir – Button",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.cta",
           "maxLength": 100
         },
@@ -770,7 +770,7 @@
           "id": "home.whyUs.image",
           "label": "Warum wir – Bild",
           "type": "image",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.image.src",
           "maxLength": 300
         },
@@ -778,7 +778,7 @@
           "id": "home.whyUs.imageAlt",
           "label": "Warum wir – Bild Alt-Text",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.image.alt",
           "maxLength": 200
         },
@@ -786,7 +786,7 @@
           "id": "home.whyUs.badgeValue",
           "label": "Warum wir – Badge Wert",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.badgeValue",
           "maxLength": 20
         },
@@ -794,7 +794,7 @@
           "id": "home.whyUs.badgeLabel",
           "label": "Warum wir – Badge Label",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.badgeLabel",
           "maxLength": 60
         },
@@ -802,7 +802,7 @@
           "id": "home.whyUs.features.0.title",
           "label": "Warum wir Merkmal 1 (Bezugspflege) – Titel",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.0.title",
           "maxLength": 100
         },
@@ -810,7 +810,7 @@
           "id": "home.whyUs.features.0.desc",
           "label": "Warum wir Merkmal 1 (Bezugspflege) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.0.desc",
           "maxLength": 300
         },
@@ -818,7 +818,7 @@
           "id": "home.whyUs.features.1.title",
           "label": "Warum wir Merkmal 2 (24h Erreichbarkeit) – Titel",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.1.title",
           "maxLength": 100
         },
@@ -826,7 +826,7 @@
           "id": "home.whyUs.features.1.desc",
           "label": "Warum wir Merkmal 2 (24h Erreichbarkeit) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.1.desc",
           "maxLength": 300
         },
@@ -834,7 +834,7 @@
           "id": "home.whyUs.features.2.title",
           "label": "Warum wir Merkmal 3 (Individuelle Beratung) – Titel",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.2.title",
           "maxLength": 100
         },
@@ -842,7 +842,7 @@
           "id": "home.whyUs.features.2.desc",
           "label": "Warum wir Merkmal 3 (Individuelle Beratung) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.2.desc",
           "maxLength": 300
         },
@@ -850,7 +850,7 @@
           "id": "home.whyUs.features.3.title",
           "label": "Warum wir Merkmal 4 (Höchste Qualität) – Titel",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.3.title",
           "maxLength": 100
         },
@@ -858,7 +858,7 @@
           "id": "home.whyUs.features.3.desc",
           "label": "Warum wir Merkmal 4 (Höchste Qualität) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "whyUs.features.3.desc",
           "maxLength": 300
         }
@@ -872,7 +872,7 @@
           "id": "home.cta.titleLine1",
           "label": "CTA – Titel Zeile 1",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "cta.titleLine1",
           "maxLength": 120
         },
@@ -880,7 +880,7 @@
           "id": "home.cta.titleLine2",
           "label": "CTA – Titel Zeile 2",
           "type": "text",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "cta.titleLine2",
           "maxLength": 120
         },
@@ -888,7 +888,7 @@
           "id": "home.cta.text",
           "label": "CTA – Text",
           "type": "textarea",
-          "file": "content/pages/home.json",
+          "file": "src/content/pages/home.json",
           "path": "cta.text",
           "maxLength": 400
         }
@@ -902,7 +902,7 @@
           "id": "kontakt.intro.title",
           "label": "Intro – Titel",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "intro.title",
           "maxLength": 80
         },
@@ -910,7 +910,7 @@
           "id": "kontakt.intro.subtitle",
           "label": "Intro – Untertitel",
           "type": "textarea",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "intro.subtitle",
           "maxLength": 200
         },
@@ -918,7 +918,7 @@
           "id": "kontakt.details.phoneLabel",
           "label": "Kontaktdaten – Label Telefon",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "details.phoneLabel",
           "maxLength": 60
         },
@@ -926,7 +926,7 @@
           "id": "kontakt.details.emailLabel",
           "label": "Kontaktdaten – Label E-Mail",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "details.emailLabel",
           "maxLength": 60
         },
@@ -934,7 +934,7 @@
           "id": "kontakt.details.addressLabel",
           "label": "Kontaktdaten – Label Anschrift",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "details.addressLabel",
           "maxLength": 60
         },
@@ -942,7 +942,7 @@
           "id": "kontakt.details.officeHoursHeading",
           "label": "Kontaktdaten – Überschrift Bürozeiten",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "details.officeHoursHeading",
           "maxLength": 80
         },
@@ -950,7 +950,7 @@
           "id": "kontakt.details.serviceAreaHeading",
           "label": "Kontaktdaten – Überschrift Einzugsgebiet",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "details.serviceAreaHeading",
           "maxLength": 80
         },
@@ -958,7 +958,7 @@
           "id": "kontakt.details.note",
           "label": "Kontaktdaten – Hinweis",
           "type": "textarea",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "details.note",
           "maxLength": 300
         },
@@ -966,7 +966,7 @@
           "id": "kontakt.form.heading",
           "label": "Formular – Überschrift",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.heading",
           "maxLength": 100
         },
@@ -974,7 +974,7 @@
           "id": "kontakt.form.nameLabel",
           "label": "Formular – Label Name",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.nameLabel",
           "maxLength": 80
         },
@@ -982,7 +982,7 @@
           "id": "kontakt.form.namePlaceholder",
           "label": "Formular – Platzhalter Name",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.namePlaceholder",
           "maxLength": 100
         },
@@ -990,7 +990,7 @@
           "id": "kontakt.form.emailLabel",
           "label": "Formular – Label E-Mail",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.emailLabel",
           "maxLength": 80
         },
@@ -998,7 +998,7 @@
           "id": "kontakt.form.emailPlaceholder",
           "label": "Formular – Platzhalter E-Mail",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.emailPlaceholder",
           "maxLength": 100
         },
@@ -1006,7 +1006,7 @@
           "id": "kontakt.form.phoneLabel",
           "label": "Formular – Label Telefon",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.phoneLabel",
           "maxLength": 100
         },
@@ -1014,7 +1014,7 @@
           "id": "kontakt.form.phonePlaceholder",
           "label": "Formular – Platzhalter Telefon",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.phonePlaceholder",
           "maxLength": 100
         },
@@ -1022,7 +1022,7 @@
           "id": "kontakt.form.messageLabel",
           "label": "Formular – Label Nachricht",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.messageLabel",
           "maxLength": 100
         },
@@ -1030,7 +1030,7 @@
           "id": "kontakt.form.messagePlaceholder",
           "label": "Formular – Platzhalter Nachricht",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.messagePlaceholder",
           "maxLength": 120
         },
@@ -1038,7 +1038,7 @@
           "id": "kontakt.form.dsgvoPreLink",
           "label": "Formular – DSGVO-Text (vor Link)",
           "type": "textarea",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.dsgvoPreLink",
           "maxLength": 300
         },
@@ -1046,7 +1046,7 @@
           "id": "kontakt.form.dsgvoLinkLabel",
           "label": "Formular – DSGVO-Linktext",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.dsgvoLinkLabel",
           "maxLength": 80
         },
@@ -1054,7 +1054,7 @@
           "id": "kontakt.form.dsgvoPostLink",
           "label": "Formular – DSGVO-Text (nach Link)",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.dsgvoPostLink",
           "maxLength": 40
         },
@@ -1062,7 +1062,7 @@
           "id": "kontakt.form.submitLabel",
           "label": "Formular – Absenden-Button",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "form.submitLabel",
           "maxLength": 80
         },
@@ -1070,7 +1070,7 @@
           "id": "kontakt.success.title",
           "label": "Erfolgsmeldung – Titel",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "success.title",
           "maxLength": 100
         },
@@ -1078,7 +1078,7 @@
           "id": "kontakt.success.text",
           "label": "Erfolgsmeldung – Text",
           "type": "textarea",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "success.text",
           "maxLength": 300
         },
@@ -1086,7 +1086,7 @@
           "id": "kontakt.success.backLabel",
           "label": "Erfolgsmeldung – Linktext",
           "type": "text",
-          "file": "content/pages/kontakt.json",
+          "file": "src/content/pages/kontakt.json",
           "path": "success.backLabel",
           "maxLength": 100
         }
@@ -1100,7 +1100,7 @@
           "id": "leistungen.meta.title",
           "label": "SEO-Titel Leistungen",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "meta.title",
           "maxLength": 200
         },
@@ -1108,7 +1108,7 @@
           "id": "leistungen.meta.description",
           "label": "SEO-Beschreibung Leistungen",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "meta.description",
           "maxLength": 400
         },
@@ -1116,7 +1116,7 @@
           "id": "leistungen.intro.accent",
           "label": "Intro – Akzent",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "intro.accent",
           "maxLength": 80
         },
@@ -1124,7 +1124,7 @@
           "id": "leistungen.intro.title",
           "label": "Intro – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "intro.title",
           "maxLength": 120
         },
@@ -1132,7 +1132,7 @@
           "id": "leistungen.intro.description",
           "label": "Intro – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "intro.description",
           "maxLength": 400
         },
@@ -1140,7 +1140,7 @@
           "id": "leistungen.services.0.title",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.title",
           "maxLength": 120
         },
@@ -1148,7 +1148,7 @@
           "id": "leistungen.services.0.description",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.description",
           "maxLength": 1200
         },
@@ -1156,7 +1156,7 @@
           "id": "leistungen.services.0.features.0",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Merkmal 1",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.features.0",
           "maxLength": 120
         },
@@ -1164,7 +1164,7 @@
           "id": "leistungen.services.0.features.1",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Merkmal 2",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.features.1",
           "maxLength": 120
         },
@@ -1172,7 +1172,7 @@
           "id": "leistungen.services.0.features.2",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Merkmal 3",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.features.2",
           "maxLength": 120
         },
@@ -1180,7 +1180,7 @@
           "id": "leistungen.services.0.features.3",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Merkmal 4",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.features.3",
           "maxLength": 120
         },
@@ -1188,7 +1188,7 @@
           "id": "leistungen.services.0.features.4",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Merkmal 5",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.features.4",
           "maxLength": 120
         },
@@ -1196,7 +1196,7 @@
           "id": "leistungen.services.0.features.5",
           "label": "Leistung 1 (Behandlungspflege (SGB V)) – Merkmal 6",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.0.features.5",
           "maxLength": 120
         },
@@ -1204,7 +1204,7 @@
           "id": "leistungen.services.1.title",
           "label": "Leistung 2 (Grundpflege) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.title",
           "maxLength": 120
         },
@@ -1212,7 +1212,7 @@
           "id": "leistungen.services.1.description",
           "label": "Leistung 2 (Grundpflege) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.description",
           "maxLength": 1200
         },
@@ -1220,7 +1220,7 @@
           "id": "leistungen.services.1.features.0",
           "label": "Leistung 2 (Grundpflege) – Merkmal 1",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.features.0",
           "maxLength": 120
         },
@@ -1228,7 +1228,7 @@
           "id": "leistungen.services.1.features.1",
           "label": "Leistung 2 (Grundpflege) – Merkmal 2",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.features.1",
           "maxLength": 120
         },
@@ -1236,7 +1236,7 @@
           "id": "leistungen.services.1.features.2",
           "label": "Leistung 2 (Grundpflege) – Merkmal 3",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.features.2",
           "maxLength": 120
         },
@@ -1244,7 +1244,7 @@
           "id": "leistungen.services.1.features.3",
           "label": "Leistung 2 (Grundpflege) – Merkmal 4",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.features.3",
           "maxLength": 120
         },
@@ -1252,7 +1252,7 @@
           "id": "leistungen.services.1.features.4",
           "label": "Leistung 2 (Grundpflege) – Merkmal 5",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.features.4",
           "maxLength": 120
         },
@@ -1260,7 +1260,7 @@
           "id": "leistungen.services.1.features.5",
           "label": "Leistung 2 (Grundpflege) – Merkmal 6",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.1.features.5",
           "maxLength": 120
         },
@@ -1268,7 +1268,7 @@
           "id": "leistungen.services.2.title",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.title",
           "maxLength": 120
         },
@@ -1276,7 +1276,7 @@
           "id": "leistungen.services.2.description",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.description",
           "maxLength": 1200
         },
@@ -1284,7 +1284,7 @@
           "id": "leistungen.services.2.features.0",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Merkmal 1",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.features.0",
           "maxLength": 120
         },
@@ -1292,7 +1292,7 @@
           "id": "leistungen.services.2.features.1",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Merkmal 2",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.features.1",
           "maxLength": 120
         },
@@ -1300,7 +1300,7 @@
           "id": "leistungen.services.2.features.2",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Merkmal 3",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.features.2",
           "maxLength": 120
         },
@@ -1308,7 +1308,7 @@
           "id": "leistungen.services.2.features.3",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Merkmal 4",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.features.3",
           "maxLength": 120
         },
@@ -1316,7 +1316,7 @@
           "id": "leistungen.services.2.features.4",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Merkmal 5",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.features.4",
           "maxLength": 120
         },
@@ -1324,7 +1324,7 @@
           "id": "leistungen.services.2.features.5",
           "label": "Leistung 3 (Pflegeberatung (§ 37 SGB XI)) – Merkmal 6",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.2.features.5",
           "maxLength": 120
         },
@@ -1332,7 +1332,7 @@
           "id": "leistungen.services.3.title",
           "label": "Leistung 4 (Betreuung & Entlastung) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.title",
           "maxLength": 120
         },
@@ -1340,7 +1340,7 @@
           "id": "leistungen.services.3.description",
           "label": "Leistung 4 (Betreuung & Entlastung) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.description",
           "maxLength": 1200
         },
@@ -1348,7 +1348,7 @@
           "id": "leistungen.services.3.features.0",
           "label": "Leistung 4 (Betreuung & Entlastung) – Merkmal 1",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.features.0",
           "maxLength": 120
         },
@@ -1356,7 +1356,7 @@
           "id": "leistungen.services.3.features.1",
           "label": "Leistung 4 (Betreuung & Entlastung) – Merkmal 2",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.features.1",
           "maxLength": 120
         },
@@ -1364,7 +1364,7 @@
           "id": "leistungen.services.3.features.2",
           "label": "Leistung 4 (Betreuung & Entlastung) – Merkmal 3",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.features.2",
           "maxLength": 120
         },
@@ -1372,7 +1372,7 @@
           "id": "leistungen.services.3.features.3",
           "label": "Leistung 4 (Betreuung & Entlastung) – Merkmal 4",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.features.3",
           "maxLength": 120
         },
@@ -1380,7 +1380,7 @@
           "id": "leistungen.services.3.features.4",
           "label": "Leistung 4 (Betreuung & Entlastung) – Merkmal 5",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.features.4",
           "maxLength": 120
         },
@@ -1388,7 +1388,7 @@
           "id": "leistungen.services.3.features.5",
           "label": "Leistung 4 (Betreuung & Entlastung) – Merkmal 6",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.3.features.5",
           "maxLength": 120
         },
@@ -1396,7 +1396,7 @@
           "id": "leistungen.services.4.title",
           "label": "Leistung 5 (Verhinderungspflege) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.title",
           "maxLength": 120
         },
@@ -1404,7 +1404,7 @@
           "id": "leistungen.services.4.description",
           "label": "Leistung 5 (Verhinderungspflege) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.description",
           "maxLength": 1200
         },
@@ -1412,7 +1412,7 @@
           "id": "leistungen.services.4.features.0",
           "label": "Leistung 5 (Verhinderungspflege) – Merkmal 1",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.features.0",
           "maxLength": 120
         },
@@ -1420,7 +1420,7 @@
           "id": "leistungen.services.4.features.1",
           "label": "Leistung 5 (Verhinderungspflege) – Merkmal 2",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.features.1",
           "maxLength": 120
         },
@@ -1428,7 +1428,7 @@
           "id": "leistungen.services.4.features.2",
           "label": "Leistung 5 (Verhinderungspflege) – Merkmal 3",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.features.2",
           "maxLength": 120
         },
@@ -1436,7 +1436,7 @@
           "id": "leistungen.services.4.features.3",
           "label": "Leistung 5 (Verhinderungspflege) – Merkmal 4",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.features.3",
           "maxLength": 120
         },
@@ -1444,7 +1444,7 @@
           "id": "leistungen.services.4.features.4",
           "label": "Leistung 5 (Verhinderungspflege) – Merkmal 5",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.features.4",
           "maxLength": 120
         },
@@ -1452,7 +1452,7 @@
           "id": "leistungen.services.4.features.5",
           "label": "Leistung 5 (Verhinderungspflege) – Merkmal 6",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.4.features.5",
           "maxLength": 120
         },
@@ -1460,7 +1460,7 @@
           "id": "leistungen.services.5.title",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.title",
           "maxLength": 120
         },
@@ -1468,7 +1468,7 @@
           "id": "leistungen.services.5.description",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.description",
           "maxLength": 1200
         },
@@ -1476,7 +1476,7 @@
           "id": "leistungen.services.5.features.0",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Merkmal 1",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.features.0",
           "maxLength": 120
         },
@@ -1484,7 +1484,7 @@
           "id": "leistungen.services.5.features.1",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Merkmal 2",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.features.1",
           "maxLength": 120
         },
@@ -1492,7 +1492,7 @@
           "id": "leistungen.services.5.features.2",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Merkmal 3",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.features.2",
           "maxLength": 120
         },
@@ -1500,7 +1500,7 @@
           "id": "leistungen.services.5.features.3",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Merkmal 4",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.features.3",
           "maxLength": 120
         },
@@ -1508,7 +1508,7 @@
           "id": "leistungen.services.5.features.4",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Merkmal 5",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.features.4",
           "maxLength": 120
         },
@@ -1516,7 +1516,7 @@
           "id": "leistungen.services.5.features.5",
           "label": "Leistung 6 (Hauswirtschaftliche Hilfe) – Merkmal 6",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.5.features.5",
           "maxLength": 120
         },
@@ -1524,7 +1524,7 @@
           "id": "leistungen.services.6.title",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.title",
           "maxLength": 120
         },
@@ -1532,7 +1532,7 @@
           "id": "leistungen.services.6.description",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.description",
           "maxLength": 1200
         },
@@ -1540,7 +1540,7 @@
           "id": "leistungen.services.6.features.0",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Merkmal 1",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.features.0",
           "maxLength": 120
         },
@@ -1548,7 +1548,7 @@
           "id": "leistungen.services.6.features.1",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Merkmal 2",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.features.1",
           "maxLength": 120
         },
@@ -1556,7 +1556,7 @@
           "id": "leistungen.services.6.features.2",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Merkmal 3",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.features.2",
           "maxLength": 120
         },
@@ -1564,7 +1564,7 @@
           "id": "leistungen.services.6.features.3",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Merkmal 4",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.features.3",
           "maxLength": 120
         },
@@ -1572,7 +1572,7 @@
           "id": "leistungen.services.6.features.4",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Merkmal 5",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.features.4",
           "maxLength": 120
         },
@@ -1580,7 +1580,7 @@
           "id": "leistungen.services.6.features.5",
           "label": "Leistung 7 (Vermittlung von Zusatzleistungen) – Merkmal 6",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "services.6.features.5",
           "maxLength": 120
         },
@@ -1588,7 +1588,7 @@
           "id": "leistungen.usp.title",
           "label": "Besonderheiten – Überschrift",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.title",
           "maxLength": 120
         },
@@ -1596,7 +1596,7 @@
           "id": "leistungen.usp.subline",
           "label": "Besonderheiten – Subline",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.subline",
           "maxLength": 100
         },
@@ -1604,7 +1604,7 @@
           "id": "leistungen.usp.items.0.title",
           "label": "Besonderheit 1 (Bezugspflege) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.items.0.title",
           "maxLength": 100
         },
@@ -1612,7 +1612,7 @@
           "id": "leistungen.usp.items.0.desc",
           "label": "Besonderheit 1 (Bezugspflege) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.items.0.desc",
           "maxLength": 300
         },
@@ -1620,7 +1620,7 @@
           "id": "leistungen.usp.items.1.title",
           "label": "Besonderheit 2 (Individuelle Planung) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.items.1.title",
           "maxLength": 100
         },
@@ -1628,7 +1628,7 @@
           "id": "leistungen.usp.items.1.desc",
           "label": "Besonderheit 2 (Individuelle Planung) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.items.1.desc",
           "maxLength": 300
         },
@@ -1636,7 +1636,7 @@
           "id": "leistungen.usp.items.2.title",
           "label": "Besonderheit 3 (Zertifizierte Fachkräfte) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.items.2.title",
           "maxLength": 100
         },
@@ -1644,7 +1644,7 @@
           "id": "leistungen.usp.items.2.desc",
           "label": "Besonderheit 3 (Zertifizierte Fachkräfte) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "usp.items.2.desc",
           "maxLength": 300
         },
@@ -1652,7 +1652,7 @@
           "id": "leistungen.steps.title",
           "label": "Ablauf – Überschrift",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "steps.title",
           "maxLength": 120
         },
@@ -1660,7 +1660,7 @@
           "id": "leistungen.steps.items.0.title",
           "label": "Ablauf Schritt 1 (Erstkontakt) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "steps.items.0.title",
           "maxLength": 120
         },
@@ -1668,7 +1668,7 @@
           "id": "leistungen.steps.items.0.desc",
           "label": "Ablauf Schritt 1 (Erstkontakt) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "steps.items.0.desc",
           "maxLength": 400
         },
@@ -1676,7 +1676,7 @@
           "id": "leistungen.steps.items.1.title",
           "label": "Ablauf Schritt 2 (Persönliche Beratung & Bedarfsermittlung) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "steps.items.1.title",
           "maxLength": 120
         },
@@ -1684,7 +1684,7 @@
           "id": "leistungen.steps.items.1.desc",
           "label": "Ablauf Schritt 2 (Persönliche Beratung & Bedarfsermittlung) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "steps.items.1.desc",
           "maxLength": 400
         },
@@ -1692,7 +1692,7 @@
           "id": "leistungen.steps.items.2.title",
           "label": "Ablauf Schritt 3 (Beginn der Versorgung) – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "steps.items.2.title",
           "maxLength": 120
         },
@@ -1700,7 +1700,7 @@
           "id": "leistungen.steps.items.2.desc",
           "label": "Ablauf Schritt 3 (Beginn der Versorgung) – Beschreibung",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "steps.items.2.desc",
           "maxLength": 400
         },
@@ -1708,7 +1708,7 @@
           "id": "leistungen.cta.title",
           "label": "CTA – Titel",
           "type": "text",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "cta.title",
           "maxLength": 160
         },
@@ -1716,7 +1716,7 @@
           "id": "leistungen.cta.text",
           "label": "CTA – Text",
           "type": "textarea",
-          "file": "content/pages/leistungen.json",
+          "file": "src/content/pages/leistungen.json",
           "path": "cta.text",
           "maxLength": 300
         }
@@ -1730,7 +1730,7 @@
           "id": "ueberuns.meta.title",
           "label": "SEO-Titel Über uns",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "meta.title",
           "maxLength": 200
         },
@@ -1738,7 +1738,7 @@
           "id": "ueberuns.meta.description",
           "label": "SEO-Beschreibung Über uns",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "meta.description",
           "maxLength": 400
         },
@@ -1746,7 +1746,7 @@
           "id": "ueberuns.intro.title",
           "label": "Intro – Titel",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "intro.title",
           "maxLength": 80
         },
@@ -1754,7 +1754,7 @@
           "id": "ueberuns.intro.text",
           "label": "Intro – Text",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "intro.text",
           "maxLength": 400
         },
@@ -1762,7 +1762,7 @@
           "id": "ueberuns.philosophy.title",
           "label": "Philosophie – Titel",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.title",
           "maxLength": 120
         },
@@ -1770,7 +1770,7 @@
           "id": "ueberuns.philosophy.text",
           "label": "Philosophie – Text",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.text",
           "maxLength": 800
         },
@@ -1778,7 +1778,7 @@
           "id": "ueberuns.philosophy.values.0",
           "label": "Philosophie – Wert 1 (Individuelle Pflegeplanung)",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.values.0",
           "maxLength": 120
         },
@@ -1786,7 +1786,7 @@
           "id": "ueberuns.philosophy.values.1",
           "label": "Philosophie – Wert 2 (Respektvolle Kommunikation)",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.values.1",
           "maxLength": 120
         },
@@ -1794,7 +1794,7 @@
           "id": "ueberuns.philosophy.values.2",
           "label": "Philosophie – Wert 3 (Höchste fachliche Standards)",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.values.2",
           "maxLength": 120
         },
@@ -1802,7 +1802,7 @@
           "id": "ueberuns.philosophy.values.3",
           "label": "Philosophie – Wert 4 (Kontinuität durch Bezugspflege)",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.values.3",
           "maxLength": 120
         },
@@ -1810,7 +1810,7 @@
           "id": "ueberuns.philosophy.image",
           "label": "Philosophie – Bild",
           "type": "image",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.image.src",
           "maxLength": 300
         },
@@ -1818,7 +1818,7 @@
           "id": "ueberuns.philosophy.imageAlt",
           "label": "Philosophie – Bild Alt-Text",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.image.alt",
           "maxLength": 200
         },
@@ -1826,7 +1826,7 @@
           "id": "ueberuns.philosophy.overlayQuote",
           "label": "Philosophie – Overlay-Zitat",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "philosophy.overlayQuote",
           "maxLength": 200
         },
@@ -1834,7 +1834,7 @@
           "id": "ueberuns.security.title",
           "label": "Sicherheit – Überschrift",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.title",
           "maxLength": 120
         },
@@ -1842,7 +1842,7 @@
           "id": "ueberuns.security.boxes.0.label",
           "label": "Sicherheit Box 1 (Erfahrung) – Label",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.0.label",
           "maxLength": 80
         },
@@ -1850,7 +1850,7 @@
           "id": "ueberuns.security.boxes.0.text",
           "label": "Sicherheit Box 1 (Erfahrung) – Text",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.0.text",
           "maxLength": 200
         },
@@ -1858,7 +1858,7 @@
           "id": "ueberuns.security.boxes.1.label",
           "label": "Sicherheit Box 2 (Qualifikation) – Label",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.1.label",
           "maxLength": 80
         },
@@ -1866,7 +1866,7 @@
           "id": "ueberuns.security.boxes.1.text",
           "label": "Sicherheit Box 2 (Qualifikation) – Text",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.1.text",
           "maxLength": 200
         },
@@ -1874,7 +1874,7 @@
           "id": "ueberuns.security.boxes.2.label",
           "label": "Sicherheit Box 3 (Erreichbarkeit) – Label",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.2.label",
           "maxLength": 80
         },
@@ -1882,7 +1882,7 @@
           "id": "ueberuns.security.boxes.2.text",
           "label": "Sicherheit Box 3 (Erreichbarkeit) – Text",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.2.text",
           "maxLength": 200
         },
@@ -1890,7 +1890,7 @@
           "id": "ueberuns.security.boxes.3.label",
           "label": "Sicherheit Box 4 (Beratung) – Label",
           "type": "text",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.3.label",
           "maxLength": 80
         },
@@ -1898,7 +1898,7 @@
           "id": "ueberuns.security.boxes.3.text",
           "label": "Sicherheit Box 4 (Beratung) – Text",
           "type": "textarea",
-          "file": "content/pages/ueber-uns.json",
+          "file": "src/content/pages/ueber-uns.json",
           "path": "security.boxes.3.text",
           "maxLength": 200
         }
@@ -1912,7 +1912,7 @@
           "id": "impressum.meta.title",
           "label": "SEO-Titel Impressum",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "meta.title",
           "maxLength": 200
         },
@@ -1920,7 +1920,7 @@
           "id": "impressum.meta.description",
           "label": "SEO-Beschreibung Impressum",
           "type": "textarea",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "meta.description",
           "maxLength": 400
         },
@@ -1928,7 +1928,7 @@
           "id": "impressum.title",
           "label": "Seitentitel",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "title",
           "maxLength": 80
         },
@@ -1936,7 +1936,7 @@
           "id": "impressum.tmg.heading",
           "label": "Überschrift § 5 TMG",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "tmg.heading",
           "maxLength": 120
         },
@@ -1944,7 +1944,7 @@
           "id": "impressum.representedBy.heading",
           "label": "Überschrift Vertreten durch",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "representedBy.heading",
           "maxLength": 120
         },
@@ -1952,7 +1952,7 @@
           "id": "impressum.representedBy.name",
           "label": "Vertreten durch – Name",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "representedBy.name",
           "maxLength": 120
         },
@@ -1960,7 +1960,7 @@
           "id": "impressum.contact.heading",
           "label": "Überschrift Kontakt",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "contact.heading",
           "maxLength": 120
         },
@@ -1968,7 +1968,7 @@
           "id": "impressum.contact.phoneLabel",
           "label": "Kontakt – Label Telefon",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "contact.phoneLabel",
           "maxLength": 60
         },
@@ -1976,7 +1976,7 @@
           "id": "impressum.contact.emailLabel",
           "label": "Kontakt – Label E-Mail",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "contact.emailLabel",
           "maxLength": 60
         },
@@ -1984,7 +1984,7 @@
           "id": "impressum.register.heading",
           "label": "Überschrift Registereintrag",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "register.heading",
           "maxLength": 120
         },
@@ -1992,7 +1992,7 @@
           "id": "impressum.register.line1",
           "label": "Registereintrag – Zeile 1",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "register.line1",
           "maxLength": 120
         },
@@ -2000,7 +2000,7 @@
           "id": "impressum.register.courtLabel",
           "label": "Registereintrag – Label Gericht",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "register.courtLabel",
           "maxLength": 80
         },
@@ -2008,7 +2008,7 @@
           "id": "impressum.register.court",
           "label": "Registereintrag – Registergericht",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "register.court",
           "maxLength": 120
         },
@@ -2016,7 +2016,7 @@
           "id": "impressum.register.numberLabel",
           "label": "Registereintrag – Label Nummer",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "register.numberLabel",
           "maxLength": 80
         },
@@ -2024,7 +2024,7 @@
           "id": "impressum.register.number",
           "label": "Registereintrag – Registernummer",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "register.number",
           "maxLength": 60
         },
@@ -2032,7 +2032,7 @@
           "id": "impressum.tax.heading",
           "label": "Überschrift Steuernummer",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "tax.heading",
           "maxLength": 120
         },
@@ -2040,7 +2040,7 @@
           "id": "impressum.tax.label",
           "label": "Steuernummer – Label",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "tax.label",
           "maxLength": 80
         },
@@ -2048,7 +2048,7 @@
           "id": "impressum.tax.number",
           "label": "Steuernummer – Nummer",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "tax.number",
           "maxLength": 60
         },
@@ -2056,7 +2056,7 @@
           "id": "impressum.editorial.heading",
           "label": "Überschrift Redaktionell verantwortlich",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "editorial.heading",
           "maxLength": 160
         },
@@ -2064,7 +2064,7 @@
           "id": "impressum.editorial.name",
           "label": "Redaktionell verantwortlich – Name",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "editorial.name",
           "maxLength": 120
         },
@@ -2072,7 +2072,7 @@
           "id": "impressum.dispute.heading",
           "label": "Überschrift Streitbeilegung",
           "type": "text",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "dispute.heading",
           "maxLength": 200
         },
@@ -2080,7 +2080,7 @@
           "id": "impressum.dispute.text",
           "label": "Streitbeilegung – Text",
           "type": "textarea",
-          "file": "content/pages/impressum.json",
+          "file": "src/content/pages/impressum.json",
           "path": "dispute.text",
           "maxLength": 400
         }
@@ -2094,7 +2094,7 @@
           "id": "datenschutz.meta.title",
           "label": "SEO-Titel Datenschutz",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "meta.title",
           "maxLength": 200
         },
@@ -2102,7 +2102,7 @@
           "id": "datenschutz.meta.description",
           "label": "SEO-Beschreibung Datenschutz",
           "type": "textarea",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "meta.description",
           "maxLength": 400
         },
@@ -2110,7 +2110,7 @@
           "id": "datenschutz.title",
           "label": "Seitentitel",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "title",
           "maxLength": 80
         },
@@ -2118,7 +2118,7 @@
           "id": "datenschutz.overview.heading",
           "label": "Überschrift 1. Datenschutz auf einen Blick",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "overview.heading",
           "maxLength": 160
         },
@@ -2126,7 +2126,7 @@
           "id": "datenschutz.overview.generalHeading",
           "label": "Überschrift Allgemeine Hinweise",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "overview.generalHeading",
           "maxLength": 120
         },
@@ -2134,7 +2134,7 @@
           "id": "datenschutz.overview.generalText",
           "label": "Allgemeine Hinweise – Text",
           "type": "textarea",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "overview.generalText",
           "maxLength": 500
         },
@@ -2142,7 +2142,7 @@
           "id": "datenschutz.overview.collectionHeading",
           "label": "Überschrift Datenerfassung",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "overview.collectionHeading",
           "maxLength": 160
         },
@@ -2150,7 +2150,7 @@
           "id": "datenschutz.overview.collectionText",
           "label": "Datenerfassung – Text",
           "type": "textarea",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "overview.collectionText",
           "maxLength": 500
         },
@@ -2158,7 +2158,7 @@
           "id": "datenschutz.hosting.heading",
           "label": "Überschrift Hostinganbieter",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "hosting.heading",
           "maxLength": 120
         },
@@ -2166,7 +2166,7 @@
           "id": "datenschutz.hosting.text",
           "label": "Hostinganbieter – Text",
           "type": "textarea",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "hosting.text",
           "maxLength": 600
         },
@@ -2174,7 +2174,7 @@
           "id": "datenschutz.web3forms.heading",
           "label": "Überschrift Web3Forms",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "web3forms.heading",
           "maxLength": 120
         },
@@ -2182,7 +2182,7 @@
           "id": "datenschutz.web3forms.text",
           "label": "Web3Forms – Text",
           "type": "textarea",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "web3forms.text",
           "maxLength": 600
         },
@@ -2190,7 +2190,7 @@
           "id": "datenschutz.rights.heading",
           "label": "Überschrift Ihre Rechte",
           "type": "text",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "rights.heading",
           "maxLength": 120
         },
@@ -2198,7 +2198,7 @@
           "id": "datenschutz.rights.text",
           "label": "Ihre Rechte – Text",
           "type": "textarea",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "rights.text",
           "maxLength": 600
         },
@@ -2206,7 +2206,7 @@
           "id": "datenschutz.note",
           "label": "Hinweis (Mustertext)",
           "type": "textarea",
-          "file": "content/pages/datenschutz.json",
+          "file": "src/content/pages/datenschutz.json",
           "path": "note",
           "maxLength": 300
         }
@@ -2220,7 +2220,7 @@
           "id": "notfound.meta.title",
           "label": "SEO-Titel 404",
           "type": "text",
-          "file": "content/pages/not-found.json",
+          "file": "src/content/pages/not-found.json",
           "path": "meta.title",
           "maxLength": 200
         },
@@ -2228,7 +2228,7 @@
           "id": "notfound.code",
           "label": "Fehlercode",
           "type": "text",
-          "file": "content/pages/not-found.json",
+          "file": "src/content/pages/not-found.json",
           "path": "code",
           "maxLength": 10
         },
@@ -2236,7 +2236,7 @@
           "id": "notfound.title",
           "label": "Titel",
           "type": "text",
-          "file": "content/pages/not-found.json",
+          "file": "src/content/pages/not-found.json",
           "path": "title",
           "maxLength": 100
         },
@@ -2244,7 +2244,7 @@
           "id": "notfound.text",
           "label": "Text",
           "type": "textarea",
-          "file": "content/pages/not-found.json",
+          "file": "src/content/pages/not-found.json",
           "path": "text",
           "maxLength": 300
         },
@@ -2252,7 +2252,7 @@
           "id": "notfound.ctaLabel",
           "label": "Button-Text",
           "type": "text",
-          "file": "content/pages/not-found.json",
+          "file": "src/content/pages/not-found.json",
           "path": "ctaLabel",
           "maxLength": 80
         }

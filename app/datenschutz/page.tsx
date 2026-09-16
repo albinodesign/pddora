@@ -1,6 +1,6 @@
 import React from 'react';
-import datenschutzData from '@/content/pages/datenschutz.json';
-import type { DatenschutzContent } from '@/content/types';
+import datenschutzData from '@/src/content/pages/datenschutz.json';
+import type { DatenschutzContent } from '@/src/content/types';
 import type { Metadata } from 'next';
 
 const datenschutz: DatenschutzContent = datenschutzData;

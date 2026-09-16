@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NAVIGATION, CONTACT, ICONS } from '@/constants';
-import siteData from '@/content/site.json';
+import siteData from '@/src/content/site.json';
 
 const header = siteData.header;
 

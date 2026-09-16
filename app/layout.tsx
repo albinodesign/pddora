@@ -5,7 +5,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
-import siteData from '@/content/site.json';
+import siteData from '@/src/content/site.json';
 
 const siteMeta = siteData.metadata;
 

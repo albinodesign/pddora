@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import notFoundData from '@/content/pages/not-found.json';
-import type { NotFoundContent } from '@/content/types';
+import notFoundData from '@/src/content/pages/not-found.json';
+import type { NotFoundContent } from '@/src/content/types';
 
 const notFound: NotFoundContent = notFoundData;
 

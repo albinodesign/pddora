@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { BRAND, CONTACT, ICONS } from '@/constants';
-import siteData from '@/content/site.json';
+import siteData from '@/src/content/site.json';
 
 const footer = siteData.footer;
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { BRAND, CONTACT, ICONS } from '@/constants';
-import siteData from '@/content/site.json';
-import homeData from '@/content/pages/home.json';
-import type { HomeContent } from '@/content/types';
+import siteData from '@/src/content/site.json';
+import homeData from '@/src/content/pages/home.json';
+import type { HomeContent } from '@/src/content/types';
 import type { Metadata } from 'next';
 
 const home: HomeContent = homeData;

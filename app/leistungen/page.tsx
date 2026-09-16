@@ -2,8 +2,8 @@ import React from 'react';
 import PageIntro from '@/components/PageIntro';
 import ServiceCard from '@/components/ServiceCard';
 import { CONTACT, ICONS } from '@/constants';
-import leistungenData from '@/content/pages/leistungen.json';
-import type { LeistungenContent } from '@/content/types';
+import leistungenData from '@/src/content/pages/leistungen.json';
+import type { LeistungenContent } from '@/src/content/types';
 import type { Metadata } from 'next';
 
 const leistungen: LeistungenContent = leistungenData;

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import siteData from '@/content/site.json';
+import siteData from '@/src/content/site.json';
 
 const cookie = siteData.cookieBanner;
 

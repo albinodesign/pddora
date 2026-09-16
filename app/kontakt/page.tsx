@@ -3,8 +3,8 @@
 import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { CONTACT, ICONS } from '@/constants';
-import kontaktData from '@/content/pages/kontakt.json';
-import type { KontaktContent } from '@/content/types';
+import kontaktData from '@/src/content/pages/kontakt.json';
+import type { KontaktContent } from '@/src/content/types';
 
 const kontakt: KontaktContent = kontaktData;
 
