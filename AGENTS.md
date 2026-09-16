@@ -51,6 +51,7 @@ Die gesamte Anwendung läuft ausschließlich über **Next.js App Router** mit st
 ├── src/content/                      # CMS-entkoppelte Inhalte – ALLE Texte & Bild-Referenzen liegen hier
 │   ├── site.json                 # Globale Daten: brand, contact, navigation, header, footer, cookieBanner, metadata, jsonLd
 │   ├── types.ts                  # TypeScript-Interfaces für alle Content-JSONs
+│   ├── normalize.ts              # normalizeContent(): wandelt CMS-Index-Objekte ({"0":..}) zurück in Arrays
 │   ├── cms.manifest.json         # CMS-Manifest: jedes editierbare Feld (id, label, type, file, path, maxLength)
 │   └── pages/                    # Seiteninhalte: home.json, kontakt.json, leistungen.json, ueber-uns.json, impressum.json, datenschutz.json, not-found.json
 ├── types.ts                      # TypeScript-Typdefinitionen (ServiceCardProps, ServiceCardDetails)
@@ -276,7 +277,8 @@ Seit der CMS-Refaktorierung kommen **alle sichtbaren Texte und Bild-Referenzen a
 
 - `src/content/site.json` — globale Unternehmensdaten: `brand`, `contact`, `navigation`, `header`, `footer`, `cookieBanner`, `metadata` (globale SEO-Werte aus `layout.tsx`), `jsonLd` (Structured Data der Startseite)
 - `src/content/pages/*.json` — Seiteninhalte: `home`, `kontakt`, `leistungen`, `ueber-uns`, `impressum`, `datenschutz`, `not-found` (inkl. `meta`-Objekten für die `metadata`-Exports)
-- `src/content/types.ts` — TypeScript-Interfaces für alle Content-JSONs; die JSON-Imports in den Komponenten sind damit annotiert (z. B. `const home: HomeContent = homeData`)
+- `src/content/types.ts` — TypeScript-Interfaces für alle Content-JSONs
+- `src/content/normalize.ts` — `normalizeContent<T>()` umschließt jeden JSON-Import (z. B. `const home = normalizeContent<HomeContent>(homeData)`); wandelt vom CMS fälschlich als Index-Objekte geschriebene Arrays (`{"0": ..., "3": ...}`) rekursiv zurück in Arrays, damit der Build nicht bricht. Bei neuen Content-Imports immer verwenden.
 - `src/content/cms.manifest.json` — CMS-Manifest mit **271 editierbaren Feldern** in 14 Sektionen (u. a. "Startseite - Hero", "Startseite - Leistungen (Karte 1..3)", "Kontaktseite", "Header/Footer", "Cookie-Banner", "Globale Unternehmensdaten"). Jedes Feld hat `id`, `label`, `type` (text/textarea/image), `file`, `path` (JSON-Pfad) und `maxLength`. Enthält `features: { "blog": false }` (die Website hat keinen Blog).
 
 ### DOM-Marker & Preview-Bridge
